@@ -18,4 +18,4 @@ tasks:
         cmd: go build -C {{ .TOOLSDIR }} -o {{ base .TOOL }} -trimpath {{ .TOOL }}
   run:
     cmds:
-      - ./{{ .TOOLSDIR }}/hugo server
+      - '{{ joinPath .TOOLSDIR "hugo"}} server'
