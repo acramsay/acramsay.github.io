@@ -1,0 +1,21 @@
+version: "3"
+
+vars:
+  TOOLSDIR: .tools
+
+tasks:
+  initTools:
+    cmds:
+      - mkdir -p {{ .TOOLSDIR }}
+  install:
+    deps:
+      - initTools
+    vars:
+      TOOLS:
+        sh: cat tools.go | grep _ | awk -F'"' '{print $2}'
+    cmds:
+      - for: { var: TOOLS, as: TOOL }
+        cmd: go build -C {{ .TOOLSDIR }} -o {{ base .TOOL }} -trimpath {{ .TOOL }}
+  run:
+    cmds:
+      - ./{{ .TOOLSDIR }}/hugo server
