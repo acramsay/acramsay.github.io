@@ -2,9 +2,24 @@ version: "3"
 
 vars:
   TOOLSDIR: .tools
+  HUGO: "{{ joinPath .TOOLSDIR `hugo` }}"
+  # This is a bad workaround. Hugo relies on build tags to build the extended version.
+  # It really shouldn't. Note that these tags apply to ALL tools. Yuck
+  # Possible solution? https://github.com/gohugoio/hugo/issues/10801
+  GOBUILDTAGS: extended
 
 tasks:
+  build:
+    cmds:
+      - "{{ .HUGO }}"
+  clean:
+    cmds:
+      - task: stop
+      - "{{ .HUGO }} mod clean"
+      - rm -r public || true
+      - rm -r resources || true
   initTools:
+    internal: true
     cmds:
       - mkdir -p {{ .TOOLSDIR }}
   install:
@@ -15,7 +30,11 @@ tasks:
         sh: cat tools.go | grep _ | awk -F'"' '{print $2}'
     cmds:
       - for: { var: TOOLS, as: TOOL }
-        cmd: go build -C {{ .TOOLSDIR }} -o {{ base .TOOL }} -trimpath {{ .TOOL }}
-  run:
+        cmd: go build -C {{ .TOOLSDIR }} -o {{ base .TOOL }} -trimpath -tags {{ .GOBUILDTAGS | default "\"\"" }} {{ .TOOL }}
+  start:
     cmds:
-      - '{{ joinPath .TOOLSDIR "hugo"}} server'
+      - "{{ .HUGO }} server -D &"
+      - sleep .1 # Workaround to this issue: https://github.com/go-task/task/issues/928
+  stop:
+    cmds:
+      - pkill -SIGTERM -ef {{ .HUGO }} || true

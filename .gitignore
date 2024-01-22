@@ -22,3 +22,8 @@ go.work
 
 # Tools installed via tools.go
 .tools
+
+# Hugo
+.hugo_build.lock
+public
+resources

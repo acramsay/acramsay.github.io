@@ -1,0 +1,10 @@
+baseURL: https://github.com/acramsay
+languageCode: en-us
+params:
+  contact:
+    email: acramsay@proton.me
+subtitle: Ye Olde DevOps Engineer
+title: My New Hugo Site
+theme:
+  - github.com/onweru/compose
+timeZone: America/New_York
