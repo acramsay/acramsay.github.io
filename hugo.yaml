@@ -1,10 +1,50 @@
 baseURL: https://github.com/acramsay
-languageCode: en-us
-params:
-  contact:
-    email: acramsay@proton.me
 subtitle: Ye Olde DevOps Engineer
-title: My New Hugo Site
-theme:
-  - github.com/onweru/compose
+title: Alex Ramsay
+languagecode: "en-us"
+defaultcontentlanguage: "en-us"
 timeZone: America/New_York
+
+modules:
+  imports:
+    - path: github.com/luizdepra/hugo-coder
+theme:
+  - github.com/luizdepra/hugo-coder
+
+# hugo-coder settings
+markup:
+  highlight:
+    style: nord
+
+menu:
+  main:
+    - name: About
+      weight: 1
+      url: about/
+    - name: Projects
+      weight: 2
+      url: projects/
+    - name: Resume
+      weight: 3
+      url: resume/
+params:
+  avatarURL: me.png
+  colorScheme: auto
+  customCSS:
+    - css/avatar.css
+  description: Alex Ramsay's personal website
+  info: Ye Olde DevOps Engineer
+  since: 2024
+  social:
+    - name: Github
+      icon: fa fa-github fa-2x
+      weight: 1
+      url: https://github.com/acramsay/
+    - name: Gitlab
+      icon: fa fa-gitlab fa-2x
+      weight: 2
+      url: https://gitlab.com/acramsay/
+    - name: LinkedIn
+      icon: fa fa-linkedin fa-2x
+      weight: 3
+      url: https://www.linkedin.com/in/alexramsay

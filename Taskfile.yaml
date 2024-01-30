@@ -9,32 +9,43 @@ vars:
   GOBUILDTAGS: extended
 
 tasks:
-  build:
+  cibuild:
+    deps:
+      - install
+      - update
     cmds:
-      - "{{ .HUGO }}"
+      - "{{ .HUGO }} --environment production --minify"
+
   clean:
     cmds:
       - task: stop
+      - go clean --modcache
       - "{{ .HUGO }} mod clean"
-      - rm -r public || true
-      - rm -r resources || true
-  initTools:
-    internal: true
-    cmds:
-      - mkdir -p {{ .TOOLSDIR }}
+      - rm -rf .tools public resources || true
+
   install:
-    deps:
-      - initTools
     vars:
       TOOLS:
         sh: cat tools.go | grep _ | awk -F'"' '{print $2}'
     cmds:
+      - mkdir -p {{ .TOOLSDIR }}
       - for: { var: TOOLS, as: TOOL }
         cmd: go build -C {{ .TOOLSDIR }} -o {{ base .TOOL }} -trimpath -tags {{ .GOBUILDTAGS | default "\"\"" }} {{ .TOOL }}
+
+  restart:
+    cmds:
+      - task: stop
+      - task: start
+
   start:
     cmds:
       - "{{ .HUGO }} server -D &"
       - sleep .1 # Workaround to this issue: https://github.com/go-task/task/issues/928
+
   stop:
     cmds:
       - pkill -SIGTERM -ef {{ .HUGO }} || true
+
+  update:
+    cmds:
+      - "{{ .HUGO }} mod get -u"
