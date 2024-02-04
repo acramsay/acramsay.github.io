@@ -1,0 +1,16 @@
+FirstName: Alex
+LastName: Ramsay
+Experience:
+  - Employer: Liatrio
+    Place: Remote
+    Positions:
+      - Title: Lead DevOps Engineer
+        Date: September 2023 - Present
+        Details:
+          - Rocking it
+        Badges: ["Open Telemetry"]
+      - Title: Senior DevOps Engineer
+        Date: March 2023 - September 2023
+        Details:
+          - This place was rough and needs help
+        Badges: ["Surviving Bad Culture"]
