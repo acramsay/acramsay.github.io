@@ -97,7 +97,7 @@ require (
 	github.com/kr/text v0.2.0 // indirect
 	github.com/kylelemons/godebug v1.1.0 // indirect
 	github.com/kyokomi/emoji/v2 v2.2.12 // indirect
-	github.com/luizdepra/hugo-coder v0.0.0-20240131003939-1fdac008175c // indirect
+	github.com/luizdepra/hugo-coder v0.0.0-20240205121531-cb6f1a797f52 // indirect
 	github.com/magefile/mage v1.15.0 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/marekm4/color-extractor v1.2.1 // indirect

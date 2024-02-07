@@ -265,8 +265,8 @@ github.com/kylelemons/godebug v1.1.0 h1:RPNrshWIDI6G2gRW9EHilWtl7Z6Sb1BR0xunSBf0
 github.com/kylelemons/godebug v1.1.0/go.mod h1:9/0rRGxNHcop5bhtWyNeEfOS8JIWk580+fNqagV/RAw=
 github.com/kyokomi/emoji/v2 v2.2.12 h1:sSVA5nH9ebR3Zji1o31wu3yOwD1zKXQA2z0zUyeit60=
 github.com/kyokomi/emoji/v2 v2.2.12/go.mod h1:JUcn42DTdsXJo1SWanHh4HKDEyPaR5CqkmoirZZP9qE=
-github.com/luizdepra/hugo-coder v0.0.0-20240131003939-1fdac008175c h1:9Bhv+nbe3CMtgL2yZWVNgkxTGN275JC20Mzhe7yFNz8=
-github.com/luizdepra/hugo-coder v0.0.0-20240131003939-1fdac008175c/go.mod h1:9EQBf2rU+NPjlohGuKcEgdqSeOc3tIQoOty4xPpuUQ4=
+github.com/luizdepra/hugo-coder v0.0.0-20240205121531-cb6f1a797f52 h1:hKQY63T1gzbL3FNH9jfLGUhrJYST9KIJEitXR2HeV24=
+github.com/luizdepra/hugo-coder v0.0.0-20240205121531-cb6f1a797f52/go.mod h1:9EQBf2rU+NPjlohGuKcEgdqSeOc3tIQoOty4xPpuUQ4=
 github.com/magefile/mage v1.15.0 h1:BvGheCMAsG3bWUDbZ8AyXXpCNwU9u5CB6sM+HNb9HYg=
 github.com/magefile/mage v1.15.0/go.mod h1:z5UZb/iS3GoOSn0JgWuiw7dxlurVYTu+/jHXqQg881A=
 github.com/mailru/easyjson v0.7.7 h1:UGYAvKxe3sBsEDzO8ZeWOSlIQfWFlxbzLZe7hwFURr0=

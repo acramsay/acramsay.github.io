@@ -1,5 +1,27 @@
-FirstName: Alex
-LastName: Ramsay
+BasicInfo:
+  FirstName: Alex
+  LastName: Ramsay
+  Photo: me.png
+  Contacts:
+    - Icon: fas fa-phone
+      Info: (603) 400 - 7867
+    - Icon: fas fa-envelope
+      Info: acramsay@proton.me
+    - Icon: fas fa-map-marker-alt
+      Info: New Hampshire, USA
+    - Icon: fas fa-globe
+      Info: '<a href="https://github.com/acramsay/">Github: acramsay</a>'
+    - Icon: fa fa-linkedin
+      Info: '<a href="https://www.linkedin.com/in/alexramsay">LinkedIn: alexramsay</a>'
+
+Profile: Successful systems engineer, developer, and DevOps enthusiast with over a decade of experience in software development, architecture, hosting, and operations. A passionate supporter of open source and automation at scale. Most enjoy writing tools for CI/CD and infrastructure.
+
+Education:
+  - Course: Bachelor of Science in Mathematical Sciences
+    Place: Worcester Polytechnic Institute
+    Date: May 2010
+    Details: Provost Award
+
 Experience:
   - Employer: Liatrio
     Place: Remote
@@ -9,8 +31,109 @@ Experience:
         Details:
           - Rocking it
         Badges: ["Open Telemetry"]
-      - Title: Senior DevOps Engineer
+  - Employer: Southwest Airlines
+    Place: Remote
+    Positions:
+      - Title: Senior Cloud DevOps Engineer
         Date: March 2023 - September 2023
         Details:
-          - This place was rough and needs help
-        Badges: ["Surviving Bad Culture"]
+          - "Automated a weekly extract of org chart data using Python, AWS Lambda, SNS, S3, and Active Directory."
+          - "Architecting and building an observability platform to ingest, process, and display logs, metrics, and traces using OpenTelemetry Collectors, auto-instrumentation, OpenTelemetry Gateways, Prometheus, Grafana, Opensearch, and a variety of AWS services."
+          - "Automated a weekly extract of org chart data using Python, AWS Lambda, SNS, S3, and Active Directory."
+        Badges: ["Open Telemetry"]
+  - Employer: Bottomline
+    Place: Remote
+    Positions:
+      - Title: Team Lead, Cloud Engineering
+        Badges: ["Kubernetes"]
+        Date: April 2022 - March 2023
+        Details:
+          - "In addition to previous responsibilities, led team members by designing platform changes, acting as escalation for any technical challenges, and coordinating projects with other teams. Monitored numerous git repos for code quality, scalability, and clarity"
+          - "Led project team to containerize our Jenkins infrastructure and pipelines."
+          - "Implemented Istio service mesh for approximately 50 applications with 7 team members from Development, Cloud Engineering, and Architecture."
+          - "Replaced Flux and many Jenkinsfiles by writing “Shanty”, a standalone tool that coordinates disparate Helm releases for distributed monoliths with shared configurations."
+      - Title: Senior Cloud Engineer
+        Badges: ["Kubernetes"]
+        Date: October 2018 - April 2022
+        Details:
+          - "Promoted to Senior August 2020"
+          - "Responsible for ~60 applications deployed to over 30 distinct environments including production and DR. In total, this amounts to hundreds of virtual machines and thousands of Kubernetes pods."
+          - "Built highly reusable code for CI/CD, monitoring, and supporting infrastructure."
+          - "Heavily contributed to the migration of nearly all applications from VMs into Kubernetes, accounting for networking, monitoring, and configuration at a dynamic scale."
+          - "Developed a Kubernetes operator designed to configure the Big-IP F5 infrastructure via k8s resources."
+          - "Educated coworkers on modern software architectures, tooling, and supporting technologies. Trained team members to be effective contributors using new processes and tools."
+  - Employer: Linedata
+    Place: Boston, MA and Remote
+    Positions:
+      - Title: Release and DevOps Engineer
+        Date: December 2017 - October 2018
+        Details:
+          - "Developed and monitored automation in TFS and Jenkins to compile and package software for release."
+          - "Analyzed and automated development processes with focus on decreasing development cycle duration and increasing release quality. Recommended process changes when automation was not appropriate."
+          - "Responsible for performing security scans of compiled code, submitting source code to escrow, and reviewing hotfixes for excessive risk."
+      - Title: Senior Systems Engineer
+        Date: March 2014 - December 2017
+        Details:
+          - "Promoted to Senior October 2016"
+          - "Managed application, web, and database servers dedicated to hosting Linedata's “Front Office” product suite. Responsible for technical implementations, system monitoring, system deployment and automation, scripting development, software development, and performing system maintenance."
+          - "Designed, built, and deployed file integrations to enable data flow between Linedata's core products and third party software systems. Frequently used SSIS, SQL, Powershell, Batch."
+          - "Notably, designed, built, and implemented Portal 2, a distributed software suite made to accomplish several goals: centrally manage servers, execute load balanced jobs, and deliver controlled access to Linedata's support organization. Includes two distinct Django web sites and one C#.NET Windows service, deployed to over 30 servers."
+      - Title: Senior Technical Support Specialist
+        Date: May 2012 - March 2014
+        Details:
+          - "Promoted to Senior February, 2013"
+          - "Served as the third and final tier of technical and product support working directly with clients. Additionally, responsible for Linedata's hosted domain: operational monitoring, hosted client projects, and server maintenance."
+          - "Tested product workflows, bugs, and performance issues to accommodate client needs."
+          - "Collaborated with development teams to research and correct code issues."
+      - Title: Technical Services Engineer
+        Date: January 2011 - May 2012
+        Details:
+          - "Researched and evaluated application errors. Worked closely with clients to create acceptable workarounds."
+          - "Built a domain and collection of servers dedicated to new hire and client training using VMware technologies. Successfully implemented 4 primary products in said environment. Wrote Powershell tools to enable easy management of all servers."
+
+Skills:
+  - Family: CI/CD Tools
+    Items:
+      - Argo
+      - Capistrano
+      - Concourse
+      - Docker
+      - Flux
+      - Git
+      - Github Actions
+      - Gitlab CI/CD
+      - Helm
+      - Jenkins
+      - Kaniko
+      - Kustomize
+      - Puppet
+      - Skopeo
+      - Terraform
+  - Family: Hosting/Applications
+    Items:
+      - Composable Operator
+      - Filebeat
+      - Grafana
+      - Istio
+      - Jaeger
+      - Kibana
+      - K8s + Operators
+      - Open Telemetry
+      - Postgres
+      - Prometheus
+      - RHEL
+  - Family: Languages/Frameworks
+    Items:
+      - Bash
+      - C#
+      - Django
+      - Go
+      - Hiera
+      - Javascript
+      - JQuery
+      - .Net
+      - Operator SDK
+      - Python
+      - Ruby
+      - Selenium
+      - SQL
