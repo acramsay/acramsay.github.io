@@ -1,7 +1,7 @@
-// This file is a copy/paste/edit from [almeida-cv](https://github.com/ineesalmeida/almeida-cv)
+// This file started as a copy/paste/edit from [almeida-cv](https://github.com/ineesalmeida/almeida-cv)
 // This is needed because almeida-cv is intended to be a single-page site but is used here
 // in a multi-papge site. The below scss comes from "high level" files that don't work in
-// this application.
+// this application. It has been furtehr edited personalize
 
 // Content extracted from: assets/scss/main.scss
 $color-light: #fff !default;
@@ -23,7 +23,15 @@ $color-right-col-icon-background: #e3bfb8 !default;
 
 $pages: 1 !default;
 
-@import "abstract";
+// customization of _abstract.scss
+
+$page-width: 96rem; // 8.5 inches
+$width-left-col: 67rem; // ~70%
+$width-right-col: $page-width - $width-left-col;
+$page-min-height: 124rem; // 11 inches
+$cubic: 0, 0, 0, 0;
+
+// @import "abstract";
 @import "functions";
 @import "mixins";
 @import "layout";
@@ -65,9 +73,8 @@ html {
 }
 
 .content {
-  // A4 paper
   width: $page-width;
-  min-height: paper_height($page-width);
+  min-height: $page-min-height;
   background-color: $color-light;
 
   @media screen and (min-width: 60rem) {
@@ -90,7 +97,7 @@ body {
 @media print {
   @page {
     margin: 0;
-    size: A4;
+    size: letter;
   }
 }
 
