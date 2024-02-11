@@ -1,107 +1,33 @@
-// This file started as a copy/paste/edit from [almeida-cv](https://github.com/ineesalmeida/almeida-cv)
-// This is needed because almeida-cv is intended to be a single-page site but is used here
-// in a multi-papge site. The below scss comes from "high level" files that don't work in
-// this application. It has been furtehr edited personalize
+$color-light: {{ .Site.Params.colorLight | default "#fff"}} !default;
+$color-dark: {{ .Site.Params.colorDark | default "#666"}} !default;
+$color-page-background: {{ .Site.Params.colorPageBackground | default "#ddd" }} !default;
 
-// Content extracted from: assets/scss/main.scss
-$color-light: #fff !default;
-$color-dark: #666 !default;
-$color-page-background: #ddd !default;
+$color-primary: {{ .Site.Params.colorPrimary | default "#e3bfb8"}} !default;
 
-$color-primary: #e3bfb8 !default;
+$color-secondary: {{ .Site.Params.colorSecondary | default "#aaa"}} !default;
 
-$color-secondary: #aaa !default;
+$color-icon-primary: {{ .Site.Params.colorIconPrimary | default "#fff"}} !default;
+$color-icon-background: {{ .Site.Params.colorIconBackground | default "#e3bfb8"}} !default;
 
-$color-icon-primary: #fff !default;
-$color-icon-background: #e3bfb8 !default;
+$color-right-col-background: {{ .Site.Params.colorRightColumnBackground | default "#f5f5f5" }} !default;
+$color-right-col-heading-text: {{ .Site.Params.colorRightColumnHeadingText | default "#666" }} !default;
+$color-right-col-body-text: {{ .Site.Params.colorRightColumnBodyText | default "#666" }} !default;
+$color-right-col-icon-primary: {{ .Site.Params.colorRightColumnIconPrimary | default "#fff" }} !default;
+$color-right-col-icon-background: {{ .Site.Params.colorRightColumnIconBackground | default "#e3bfb8" }} !default;
 
-$color-right-col-background: #f5f5f5 !default;
-$color-right-col-heading-text: #666 !default;
-$color-right-col-body-text: #666 !default;
-$color-right-col-icon-primary: #fff !default;
-$color-right-col-icon-background: #e3bfb8 !default;
+$pages: {{ .Site.Params.pages | default 1}} !default;
 
-$pages: 1 !default;
+@import "resume/abstract";
+@import "resume/functions";
+@import "resume/mixins";
+@import "resume/layout";
+@import "resume/base";
+@import "resume/typography";
 
-// customization of _abstract.scss
-
-$page-width: 96rem; // 8.5 inches
-$width-left-col: 67rem; // ~70%
-$width-right-col: $page-width - $width-left-col;
-$page-min-height: 124rem; // 11 inches
-$cubic: 0, 0, 0, 0;
-
-// @import "abstract";
-@import "functions";
-@import "mixins";
-@import "layout";
-// @import "base";
-@import "typography";
-
-@import "components/section";
-@import "components/side_section";
-@import "components/experience";
-@import "components/education";
-@import "components/references";
-@import "components/contact";
-@import "components/avatar";
-@import "components/skills";
-@import "components/languages";
-@import "components/interests";
-@import "components/404";
-
-@import "custom";
-
-// Content extracted from: assets/scss/_base.scss
-// This is required because of a conflict where almeida-cv and hugo-coder both define
-// "base". Thus, the above `@import "base";` tries to load hugo-coder's base and fails
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-html {
-  font-size: 62.5%;
-  background-color: $color-page-background;
-
-  @media print {
-    background-color: $color-light;
-  }
-}
-
-.content {
-  width: $page-width;
-  min-height: $page-min-height;
-  background-color: $color-light;
-
-  @media screen and (min-width: 60rem) {
-    margin: 6rem 0;
-    @include shadow(1);
-    @include hz-center;
-  }
-
-  @media print {
-    margin: 0;
-    height: paper_height($page-width) * $pages;
-  }
-}
-
-body {
-  box-sizing: border-box;
-  margin: 0px;
-}
-
-@media print {
-  @page {
-    margin: 0;
-    size: letter;
-  }
-}
-
-::selection {
-  color: $color-light;
-  background-color: darken(rgba($color-primary, 0.6), 10%);
-}
+@import "resume/components/section";
+@import "resume/components/side_section";
+@import "resume/components/experience";
+@import "resume/components/education";
+@import "resume/components/contact";
+@import "resume/components/avatar";
+@import "resume/components/skills";

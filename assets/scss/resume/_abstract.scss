@@ -1,0 +1,8 @@
+// WIDTHS
+$page-width: 96rem; // 8.5 inches
+$width-left-col: 67rem; // ~70%
+$width-right-col: $page-width - $width-left-col;
+$page-min-height: 124rem; // 11 inches
+
+// ANIMATIONS
+$cubic: 0.63, 0.21, 0.76, 1.58;

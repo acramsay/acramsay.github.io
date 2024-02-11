@@ -8,15 +8,8 @@ timeZone: America/New_York
 modules:
   imports:
     - path: github.com/luizdepra/hugo-coder
-    - path: github.com/ineesalmeida/almeida-cv
-      mounts:
-        - source: layouts/partials
-          target: layouts/partials
-        - source: assets/scss
-          target: assets/scss
 theme:
   - github.com/luizdepra/hugo-coder
-  - github.com/ineesalmeida/almeida-cv
 
 # hugo-coder settings
 markup:
