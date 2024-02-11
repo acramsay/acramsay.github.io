@@ -6,18 +6,12 @@
             font-weight: 700;
             display: inline-block;
 
-            &::after{
+            &::after {
                 content: ":"
             }
-
-            &:hover ~ li {
-                background-color: $color-primary;
-                color: $color-light;
-            }
-
         }
 
-        & li{
+        & li {
             display: inline-block;
             font-size: 105%;
             font-weight: 400;
@@ -25,13 +19,8 @@
             padding: 0 1px;
             border-radius: 2px;
 
-            &:not(:last-child)::after{
+            &:not(:last-child)::after {
                 content: ", "
-            }
-
-            &:hover {
-                background-color: $color-primary;
-                color: $color-light;
             }
         }
     }

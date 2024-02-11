@@ -1,10 +1,8 @@
 {{ if eq .Layout "resume" }}
-{{ $style := resources.Get "scss/resume.scss" | resources.ExecuteAsTemplate
-"scss/resume.scss" . | toCSS | minify | fingerprint }}
+{{ $style := resources.Get "scss/resume.scss" | resources.ExecuteAsTemplate "scss/resume.scss" . | toCSS | minify | fingerprint }}
 <link rel="canonical" href="{{ .Permalink }}" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous"
-  media="screen,print" />
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous" media="screen,print" />
 {{ end }}

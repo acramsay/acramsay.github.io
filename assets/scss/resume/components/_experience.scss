@@ -7,9 +7,11 @@
         display: block;
         position: relative;
         @include avoid-break;
+
         &:not(:first-child) {
             padding-top: 1.5rem;
         }
+
         margin-bottom: 10px;
         margin-top: 10px;
 
@@ -19,7 +21,6 @@
             width: 1.5px;
             position: absolute;
             background: linear-gradient($color-page-background, rgba(255, 255, 255, 0));
-            //background: linear-gradient(blue, red);
             margin-top: 25px;
         }
     }
@@ -33,12 +34,7 @@
 
     &__job {
         position: relative;
-        transition: transform 0.2s cubic-bezier($cubic);
         margin-bottom: 2rem;
-
-        &:hover {
-            transform: translateX(0.5rem);
-        }
     }
 
     &__company,
