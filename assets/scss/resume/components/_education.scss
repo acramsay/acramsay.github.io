@@ -1,5 +1,21 @@
 .education {
     &__item {
-        @include avoid-break;
+        margin-bottom: 0.8rem;
+    }
+
+    &__place {
+        font-weight: 700;
+    }
+
+    &__degree {
+        margin-left: 1em;
+    }
+
+    &__date {
+        float: right;
+    }
+
+    &__honors {
+        margin-left: 1em;
     }
 }

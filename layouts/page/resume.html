@@ -4,11 +4,11 @@
   <h1 class="mainHeading">{{ $data.FirstName }} <span>{{ $data.LastName }}</span></h1>
   {{ partial "resume/_profile.html" $data }}
   {{ partial "resume/_experience.html" $data }}
-  {{ partial "resume/_education.html" $data }}
 </div>
 <div class="content__right">
   {{ partial "resume/_avatar.html" $data }}
   {{ partial "resume/_contacts.html" $data }}
   {{ partial "resume/_skills.html" $data }}
+  {{ partial "resume/_education.html" $data }}
 </div>
 {{ end }}
