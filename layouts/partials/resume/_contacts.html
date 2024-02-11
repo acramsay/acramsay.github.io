@@ -1,6 +1,6 @@
 <div class="sideSection contact">
     <ul>
-        {{ range .BasicInfo.Contacts }}
+        {{ range .Contacts }}
         <li class="contact__item">
             <i class="{{ .Icon }}"></i><span>{{ .Info | safeHTML }}</span>
         </li>
