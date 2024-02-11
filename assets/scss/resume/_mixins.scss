@@ -28,3 +28,34 @@
         page-break-inside: avoid;
     }
 }
+
+// Disable color changes from hugo-coder
+@mixin resume_dark {
+    .content {
+
+        .section__title,
+        .experience__company,
+        .experience__position,
+        .sideSection__title {
+            color: $color-dark;
+        }
+
+        .mainHeading,
+        .experience__place,
+        .experience__date {
+            color: $color-secondary;
+        }
+
+        color: $color-dark;
+    }
+}
+
+body.colorscheme-dark {
+    @include resume_dark();
+}
+
+body.colorscheme-auto {
+    @media (prefers-color-scheme: dark) {
+        @include resume_dark();
+    }
+}
