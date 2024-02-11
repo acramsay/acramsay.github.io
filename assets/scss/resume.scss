@@ -37,4 +37,11 @@ h4,
 h5,
 h6 {
   margin: 0;
+  font-size: revert;
+  line-height: normal;
+}
+
+h3 {
+  font-size: revert;
+  line-height: normal;
 }

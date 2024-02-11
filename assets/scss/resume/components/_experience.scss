@@ -45,11 +45,11 @@
     }
 
     &__company {
+        text-transform: uppercase;
         color: $color-dark;
     }
 
     &__position {
-        text-transform: uppercase;
         font-size: 1.3rem;
         color: $color-dark;
         margin-left: 1rem;
@@ -83,6 +83,8 @@
     &__bullet {
         list-style: square inside;
         margin-left: 1rem;
+        padding-left: 1em;
+        text-indent: -1em;
     }
 
     &__badges {
