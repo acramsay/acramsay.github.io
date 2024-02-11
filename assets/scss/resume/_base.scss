@@ -28,7 +28,7 @@ html {
 
     @media print {
         margin: 0;
-        height: $page-height * $pages;
+        height: $page-height * 2;
     }
 }
 
@@ -41,6 +41,10 @@ body {
     @page {
         margin: 0;
         size: letter;
+    }
+
+    .navigation {
+        display: none;
     }
 }
 

@@ -15,8 +15,6 @@ $color-right-col-body-text: #666;
 $color-right-col-icon-primary: #fff;
 $color-right-col-icon-background: #e3bfb8;
 
-$pages: 1;
-
 @import "resume/abstract";
 @import "resume/mixins";
 @import "resume/layout";
@@ -30,3 +28,13 @@ $pages: 1;
 @import "resume/components/contact";
 @import "resume/components/avatar";
 @import "resume/components/skills";
+
+// Override settings from hugo-coder
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
