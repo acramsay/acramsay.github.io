@@ -9,7 +9,7 @@ BasicInfo:
       Info: acramsay@proton.me
     - Icon: fas fa-map-marker-alt
       Info: New Hampshire, USA
-    - Icon: fas fa-globe
+    - Icon: fa fa-github
       Info: '<a href="https://github.com/acramsay/">Github: acramsay</a>'
     - Icon: fa fa-linkedin
       Info: '<a href="https://www.linkedin.com/in/alexramsay">LinkedIn: alexramsay</a>'
