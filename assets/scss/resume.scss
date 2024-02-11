@@ -1,24 +1,23 @@
-$color-light: {{ .Site.Params.colorLight | default "#fff"}} !default;
-$color-dark: {{ .Site.Params.colorDark | default "#666"}} !default;
-$color-page-background: {{ .Site.Params.colorPageBackground | default "#ddd" }} !default;
+$color-light: #fff;
+$color-dark: #666;
+$color-page-background: #ddd;
 
-$color-primary: {{ .Site.Params.colorPrimary | default "#e3bfb8"}} !default;
+$color-primary: #e3bfb8;
 
-$color-secondary: {{ .Site.Params.colorSecondary | default "#aaa"}} !default;
+$color-secondary: #aaa;
 
-$color-icon-primary: {{ .Site.Params.colorIconPrimary | default "#fff"}} !default;
-$color-icon-background: {{ .Site.Params.colorIconBackground | default "#e3bfb8"}} !default;
+$color-icon-primary: #fff;
+$color-icon-background: #e3bfb8;
 
-$color-right-col-background: {{ .Site.Params.colorRightColumnBackground | default "#f5f5f5" }} !default;
-$color-right-col-heading-text: {{ .Site.Params.colorRightColumnHeadingText | default "#666" }} !default;
-$color-right-col-body-text: {{ .Site.Params.colorRightColumnBodyText | default "#666" }} !default;
-$color-right-col-icon-primary: {{ .Site.Params.colorRightColumnIconPrimary | default "#fff" }} !default;
-$color-right-col-icon-background: {{ .Site.Params.colorRightColumnIconBackground | default "#e3bfb8" }} !default;
+$color-right-col-background: #f5f5f5;
+$color-right-col-heading-text: #666;
+$color-right-col-body-text: #666;
+$color-right-col-icon-primary: #fff;
+$color-right-col-icon-background: #e3bfb8;
 
-$pages: {{ .Site.Params.pages | default 1}} !default;
+$pages: 1;
 
 @import "resume/abstract";
-@import "resume/functions";
 @import "resume/mixins";
 @import "resume/layout";
 @import "resume/base";

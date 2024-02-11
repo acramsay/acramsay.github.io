@@ -18,7 +18,7 @@ html {
 .content {
     // A4 paper
     width: $page-width;
-    min-height: paper_height($page-width);
+    min-height: $page-height;
     background-color: $color-light;
 
     @media screen and (min-width: 60rem) {
@@ -29,7 +29,7 @@ html {
 
     @media print {
         margin: 0;
-        height: paper_height($page-width) * $pages;
+        height: $page-height * $pages;
     }
 }
 
