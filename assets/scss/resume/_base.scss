@@ -9,10 +9,6 @@
 html {
     font-size: 62.5%;
     background-color: $color-page-background;
-
-    @media print {
-        background-color: $color-light;
-    }
 }
 
 .content {
@@ -26,11 +22,6 @@ html {
         @include shadow(1);
         @include hz-center;
     }
-
-    @media print {
-        margin: 0;
-        height: $page-height * 2;
-    }
 }
 
 body {
@@ -39,18 +30,18 @@ body {
 }
 
 @media print {
+    html {
+        background-color: $color-light;
+    }
+
     @page {
-        margin: 0;
         size: letter;
+        height: $page-height * 2;
     }
 
     .navigation,
+    .experience__badges,
     .footer {
-        display: none;
+        display: none !important;
     }
-}
-
-::selection {
-    color: $color-light;
-    background-color: darken(rgba($color-primary, 0.6), 10%);
 }
