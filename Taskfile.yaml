@@ -14,7 +14,7 @@ tasks:
       - install
       - update
     cmds:
-      - "{{ .HUGO }} --environment production --minify"
+      - '{{ .HUGO }} --gc --environment production --minify --baseURL "{{ .BASEURL | default "http://localhost/"}}"'
 
   clean:
     cmds:
