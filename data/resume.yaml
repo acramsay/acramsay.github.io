@@ -13,7 +13,11 @@ Contacts:
   - Icon: fa fa-linkedin
     Info: '<a href="https://www.linkedin.com/in/alexramsay">LinkedIn: alexramsay</a>'
 
-Profile: Successful systems engineer, developer, and DevOps enthusiast with over a decade of experience in software development, architecture, hosting, and operations. A passionate supporter of open source and automation at scale. Most enjoy writing tools for CI/CD and infrastructure.
+Profile: |
+  Successful systems engineer, developer, and DevOps enthusiast with over a
+  decade of experience in software development, architecture, hosting, and
+  operations. A passionate supporter of open source and automation at scale.
+  Most enjoy writing tools for CI/CD and infrastructure.
 
 Education:
   - Degree: B.S. in Mathematical Sciences
@@ -28,8 +32,13 @@ Experience:
       - Title: Lead DevOps Engineer
         Date: September 2023 - Present
         Details:
-          - Currently a Chair for the Observability TAG (Tactical Advisory Group) at Liatrio
-        Badges: ["Observability", "Open Telemetry"]
+          - Technical delivery lead for internal and client projects
+          - Uplift engineers through pair programming, code reviews, and 1-on-1
+            discussions
+          - Architect client solutions. Build POCs, MVPs, and further
+            iterations. Coordinate work within the delivery team
+          - A Chair for Liatrio's Observability TAG (Tactical Advisory Group)
+        Badges: ["Observability", "Cloud Native"]
   - Employer: Southwest Airlines
     Place: Remote
     Positions:
@@ -39,12 +48,12 @@ Experience:
           - "Elevated to Team Lead June 2023"
           - "Led a team to architect and build an observability platform based on OpenTelemetry Collectors/Gateways, auto-instrumentation, Prometheus, Grafana, Opensearch, and a variety of AWS services"
           - "Automated a weekly extract of org chart data using Python, AWS Lambda, SNS, S3, and Active Directory"
-        Badges: ["Observability", "Open Telemetry"]
+        Badges: ["Observability", "AWS"]
   - Employer: Bottomline
     Place: Remote
     Positions:
       - Title: Team Lead, Cloud Engineering
-        Badges: ["Kubernetes"]
+        Badges: ["CI/CD", "Kubernetes"]
         Date: April 2022 - March 2023
         Details:
           - "In addition to previous responsibilities, led team members by designing platform changes, acting as escalation for any technical challenges, and coordinating projects with other teams. Monitored numerous git repos for code quality, scalability, and clarity"
@@ -52,7 +61,7 @@ Experience:
           - "Implemented Istio service mesh for approximately 50 applications with 7 team members from Development, Cloud Engineering, and Architecture"
           - "Replaced Flux and many Jenkinsfiles by writing “Shanty”, a standalone tool that coordinates disparate Helm releases for distributed monoliths with shared configurations"
       - Title: Senior Cloud Engineer
-        Badges: ["Kubernetes"]
+        Badges: ["CI/CD", "Kubernetes"]
         Date: October 2018 - April 2022
         Details:
           - "Promoted to Senior August 2020"
@@ -66,12 +75,14 @@ Experience:
     Positions:
       - Title: Release and DevOps Engineer
         Date: December 2017 - October 2018
+        Badges: ["Build Automation"]
         Details:
           - "Developed and monitored automation in TFS and Jenkins to compile and package software for release"
           - "Analyzed and automated development processes with focus on decreasing development cycle duration and increasing release quality. Recommended process changes when automation was not appropriate"
           - "Responsible for performing security scans of compiled code, submitting source code to escrow, and reviewing hotfixes for excessive risk"
       - Title: Senior Systems Engineer
         Date: March 2014 - December 2017
+        Badges: ["Operations", "File Integration"]
         Details:
           - "Promoted to Senior October 2016"
           - "Managed application, web, and database servers dedicated to hosting Linedata's “Front Office” product suite. Responsible for technical implementations, system monitoring, system deployment and automation, scripting development, software development, and performing system maintenance"
