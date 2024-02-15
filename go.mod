@@ -1,6 +1,6 @@
 module github.com/acramsay/acramsay
 
-go 1.21.6
+go 1.22.0
 
 require github.com/gohugoio/hugo v0.121.2
 
