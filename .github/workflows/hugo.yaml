@@ -37,6 +37,10 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
+      - name: Install Tools
+        run: task install
+      - name: Update Hugo Modules
+        run: task update
       - name: Build Site
         env:
           BASEURL: "${{ steps.pages.outputs.base_url }}/"
