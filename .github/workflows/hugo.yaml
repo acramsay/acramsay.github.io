@@ -1,6 +1,8 @@
 name: Deploy Hugo site to Pages
 
 on:
+  pull_request:
+    branches: [main]
   push:
     branches:
       - main
@@ -28,7 +30,7 @@ jobs:
     steps:
       - uses: actions/setup-go@v5
         with:
-          go-version: '1.22'
+          go-version: "1.22"
       - name: Install Taskfile
         uses: arduino/setup-task@v1
         with:
@@ -47,6 +49,10 @@ jobs:
         env:
           BASEURL: "${{ steps.pages.outputs.base_url }}/"
         run: task cibuild BASEURL="${{ steps.pages.outputs.base_url }}/"
+      - name: Check HTML
+        uses: chabad360/htmlproofer@v2
+        with:
+          directory: "./public"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
@@ -54,6 +60,7 @@ jobs:
 
   # Deployment job
   deploy:
+    if: ${{ github.ref == 'refs/heads/main' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
