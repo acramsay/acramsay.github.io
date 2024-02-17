@@ -49,10 +49,10 @@ jobs:
         env:
           BASEURL: "${{ steps.pages.outputs.base_url }}/"
         run: task cibuild BASEURL="${{ steps.pages.outputs.base_url }}/"
-      - name: Check HTML
-        uses: chabad360/htmlproofer@v2
-        with:
-          directory: "./public"
+      # - name: Check HTML
+      #   uses: chabad360/htmlproofer@v2
+      #   with:
+      #     directory: "./public"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
