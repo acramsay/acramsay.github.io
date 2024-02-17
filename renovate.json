@@ -1,0 +1,26 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "labels": ["renovatebot", "dependencies"],
+  "schedule": ["before 8am on the first day of the month"],
+  "extends": ["config:best-practices"],
+  "ignorePaths": [
+    "archetypes/**",
+    "assets/**",
+    "content/**",
+    "data/**",
+    "layouts/**",
+    "static/**"
+  ],
+  "packageRules": [
+    {
+      "matchManagers": ["gomod"],
+      "enabled": true
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "groupName": "github-actions deps",
+      "enabled": true
+    }
+  ],
+  "suppressNotifications": ["prEditedNotification"]
+}
