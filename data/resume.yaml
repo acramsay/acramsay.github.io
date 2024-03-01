@@ -2,8 +2,6 @@ FirstName: Alex
 LastName: Ramsay
 Photo: me.png
 Contacts:
-  - Icon: fas fa-phone
-    Info: (603) 400 - 7867
   - Icon: fas fa-envelope
     Info: acramsay@proton.me
   - Icon: fas fa-map-marker-alt
