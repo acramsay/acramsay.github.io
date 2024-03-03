@@ -9,7 +9,7 @@ An uncommon breed of software engineer and hobby farmer. I live in southern NH
 with my wife, our son, and a small conglomerate of misfit dogs, horses, goats,
 and chickens (when the bears allow it). This is Johan:
 
-{{< figure src="/johan.jpeg" title="The Prettiest Rooster" width="50%" >}}
+{{< figure src="/images/johan.jpeg" title="The Prettiest Rooster" width="50%" >}}
 
 Professionally, I've spent the last {{% years-since 2011 %}} years as a systems
 engineer, software developer, and DevOps enthusiast. I don't just write code; I
@@ -27,4 +27,4 @@ it swimming, kayaking, or boating.
 
 Enjoy a few choice photos from my home:
 
-{{< slider dir="./gallery-slider" >}}
+{{< slider dir="./images/gallery-slider" >}}

@@ -1,16 +1,22 @@
-### Hi there 👋
+# Construction Notes
 
-<!--
-**acramsay/acramsay** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+[Hugo](https://gohugo.io)
+[Hugo Coder](https://github.com/luizdepra/hugo-coder)
+[Gallery Slider](https://github.com/gethugothemes/hugo-modules/gallery-slider)
 
-Here are some ideas to get you started:
+Additionally, [Almeida CV](https://themes.gohugo.io/themes/almeida-cv/) was used
+as a hugo module but required significant changes to merge with the Coder theme.
+Thus, the Aleida CV content was copied to this repo and modified accordingly.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## [Favicon Generator](https://favicon.io/favicon-generator/)
+
+```yaml
+Text: ~
+Background: Circle
+Font Family: Akronim
+Font Source: https://fonts.gstatic.com/s/akronim/v23/fdN-9sqWtWZZlHRp-gBxkFYN-a8.ttf
+Font Variant: Regular 400 Normal
+Font Size: 200
+Font Color: #FFFFFF
+Background Color: #285
+```

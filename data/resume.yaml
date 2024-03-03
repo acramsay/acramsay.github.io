@@ -1,6 +1,6 @@
 FirstName: Alex
 LastName: Ramsay
-Photo: me.png
+Photo: images/me.png
 Contacts:
   - Icon: fas fa-envelope
     Info: acramsay@proton.me
