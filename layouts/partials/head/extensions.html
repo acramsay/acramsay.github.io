@@ -6,3 +6,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous" media="screen,print" />
 {{ end }}
+
+{{ if or .Params.gallery false }}
+{{ $style := resources.Get "scss/gallerySlider.scss" | resources.ExecuteAsTemplate "scss/gallerySlider.scss" . | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{$style.Data.Integrity }}" crossorigin="anonymous" media="screen,print" />
+<script src="/plugins/glightbox/glightbox.js"></script>
+<script src="/plugins/swiper/swiper-bundle.js"></script>
+<script src="/js/gallery-slider.js"></script>
+{{ end }}

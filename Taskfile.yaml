@@ -46,6 +46,11 @@ tasks:
     cmds:
       - pkill -SIGTERM -ef {{ .HUGO }} || true
 
+  tidy:
+    cmds:
+      - go mod tidy
+      - task: update
+
   update:
     cmds:
       - "{{ .HUGO }} mod get -u"

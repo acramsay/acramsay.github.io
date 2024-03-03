@@ -1,0 +1,32 @@
+@import 'gallery-slider';
+
+.gallery-slider {
+  height: 30rem;
+  
+  .swiper-slide {
+    .img {
+      // centers the images
+      margin-left: auto !important;
+      margin-right: auto !important;
+      display: block;
+
+      // image sizing
+      max-height: 30rem;
+      height: unset;
+      width: unset;;
+    }
+  }
+}
+
+@media (min-width:460px)  {
+  .gallery-slider {
+    height: 60rem;
+    width: 75%;
+    
+    .swiper-slide {
+      .img {
+        max-height: 60rem;
+      }
+    }
+  }
+}
