@@ -36,9 +36,9 @@ params:
     - plugins/glightbox/glightbox.css
     - plugins/swiper/swiper-bundle.css
   customJS:
-    - js/gallery-slider.js
     - plugins/glightbox/glightbox.js
     - plugins/swiper/swiper-bundle.js
+    - js/gallery-slider.js
   description: Alex Ramsay's personal website
   info: Ye Olde DevOps Engineer
   since: 2024

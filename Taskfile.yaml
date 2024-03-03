@@ -37,6 +37,13 @@ tasks:
       - task: stop
       - task: start
 
+  restart-clean:
+    cmds:
+      - task: stop
+      - task: clean
+      - task: install
+      - task: start
+
   start:
     cmds:
       - "{{ .HUGO }} server -D &"
