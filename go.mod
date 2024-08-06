@@ -66,7 +66,7 @@ require (
 	github.com/fatih/color v1.16.0 // indirect
 	github.com/frankban/quicktest v1.14.6 // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
-	github.com/gethugothemes/hugo-modules/gallery-slider v0.0.0-20240228105219-38c9f9c6e062 // indirect
+	github.com/gethugothemes/hugo-modules/gallery-slider v0.0.0-20240711030223-49ae4a26e064 // indirect
 	github.com/getkin/kin-openapi v0.122.0 // indirect
 	github.com/ghodss/yaml v1.0.0 // indirect
 	github.com/go-openapi/jsonpointer v0.19.6 // indirect

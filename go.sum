@@ -158,6 +158,7 @@ github.com/fsnotify/fsnotify v1.7.0 h1:8JEhPFa5W2WU7YfeZzPNqzMP6Lwt7L2715Ggo0nos
 github.com/fsnotify/fsnotify v1.7.0/go.mod h1:40Bi/Hjc2AVfZrqy+aj+yEI+/bRxZnMJyTJwOpGvigM=
 github.com/gethugothemes/hugo-modules/gallery-slider v0.0.0-20240228105219-38c9f9c6e062 h1:7P2dBvABBhkhObmxqZIhcHYO9F2yKmNog/JdW3CPtg4=
 github.com/gethugothemes/hugo-modules/gallery-slider v0.0.0-20240228105219-38c9f9c6e062/go.mod h1:MvQ2js/ofZ22CTX5wuvE+dC0rMe6C5HAWL2fEOu/yzE=
+github.com/gethugothemes/hugo-modules/gallery-slider v0.0.0-20240711030223-49ae4a26e064/go.mod h1:MvQ2js/ofZ22CTX5wuvE+dC0rMe6C5HAWL2fEOu/yzE=
 github.com/getkin/kin-openapi v0.122.0 h1:WB9Jbl0Hp/T79/JF9xlSW5Kl9uYdk/AWD0yAd9HOM10=
 github.com/getkin/kin-openapi v0.122.0/go.mod h1:PCWw/lfBrJY4HcdqE3jj+QFkaFK8ABoqo7PvqVhXXqw=
 github.com/ghodss/yaml v1.0.0 h1:wQHKEahhL6wmXdzwWG11gIVCkOv05bNOh+Rxn0yngAk=
