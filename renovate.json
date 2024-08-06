@@ -17,7 +17,7 @@
       "matchPackagePatterns": ["*"],
       "matchUpdateTypes": ["minor","patch"],
       "groupName": "go minor and patch dependencies",
-      "groupSlug": "go-minor-patch"
+      "groupSlug": "go-minor-patch",
       "enabled": true
     },
     {
