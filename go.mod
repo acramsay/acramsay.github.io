@@ -62,7 +62,7 @@ require (
 	github.com/disintegration/gift v1.2.1 // indirect
 	github.com/dlclark/regexp2 v1.11.2 // indirect
 	github.com/dustin/go-humanize v1.0.1 // indirect
-	github.com/evanw/esbuild v0.19.8 // indirect
+	github.com/evanw/esbuild v0.23.0 // indirect
 	github.com/fatih/color v1.16.0 // indirect
 	github.com/frankban/quicktest v1.14.6 // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
