@@ -50,7 +50,7 @@ require (
 	github.com/bep/godartsass/v2 v2.0.0 // indirect
 	github.com/bep/golibsass v1.1.1 // indirect
 	github.com/bep/gowebp v0.3.0 // indirect
-	github.com/bep/lazycache v0.2.0 // indirect
+	github.com/bep/lazycache v0.4.0 // indirect
 	github.com/bep/logg v0.4.0 // indirect
 	github.com/bep/mclib v1.20400.20402 // indirect
 	github.com/bep/overlayfs v0.6.0 // indirect
@@ -87,7 +87,7 @@ require (
 	github.com/googleapis/gax-go/v2 v2.12.0 // indirect
 	github.com/gorilla/websocket v1.5.1 // indirect
 	github.com/hairyhenderson/go-codeowners v0.4.0 // indirect
-	github.com/hashicorp/golang-lru/v2 v2.0.1 // indirect
+	github.com/hashicorp/golang-lru/v2 v2.0.7 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/invopop/yaml v0.2.0 // indirect
 	github.com/jdkato/prose v1.2.1 // indirect
