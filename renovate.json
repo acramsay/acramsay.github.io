@@ -1,8 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "labels": ["renovatebot", "dependencies"],
-  "schedule": ["before 8am on the first day of the month"],
-  "extends": ["config:best-practices"],
+  "labels": [
+    "renovatebot",
+    "dependencies"
+  ],
+  "schedule": [
+    "before 8am on the first day of the month"
+  ],
+  "extends": [
+    "config:best-practices"
+  ],
   "ignorePaths": [
     "archetypes/**",
     "assets/**",
@@ -13,18 +20,29 @@
   ],
   "packageRules": [
     {
-      "matchManagers": ["gomod"],
-      "matchPackagePatterns": ["*"],
-      "matchUpdateTypes": ["minor","patch"],
+      "matchManagers": [
+        "gomod"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
       "groupName": "go minor and patch dependencies",
       "groupSlug": "go-minor-patch",
-      "enabled": true
+      "enabled": true,
+      "matchPackageNames": [
+        "*"
+      ]
     },
     {
-      "matchManagers": ["github-actions"],
+      "matchManagers": [
+        "github-actions"
+      ],
       "groupName": "github-actions deps",
       "enabled": true
     }
   ],
-  "suppressNotifications": ["prEditedNotification"]
+  "suppressNotifications": [
+    "prEditedNotification"
+  ]
 }
