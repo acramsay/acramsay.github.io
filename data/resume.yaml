@@ -12,10 +12,11 @@ Contacts:
     Info: '<a href="https://www.linkedin.com/in/alexramsay">LinkedIn: alexramsay</a>'
 
 Profile: |
-  Successful systems engineer, developer, and DevOps enthusiast with over a
-  decade of experience in software development, architecture, hosting, and
-  operations. A passionate supporter of open source and automation at scale.
-  Most enjoy writing tools for CI/CD and infrastructure.
+  Successful systems engineer, developer, DevOps enthusiast, and leader with
+  over a decade of experience in software development, architecture, hosting,
+  and operations. A passionate supporter of open source and automation at
+  scale. Seeking new leadership role that maintains technical skills by
+  fostering those of fellow engineers.
 
 Education:
   - Degree: B.S. in Mathematical Sciences
@@ -30,13 +31,11 @@ Experience:
       - Title: Lead DevOps Engineer
         Date: September 2023 - Present
         Details:
-          - Technical delivery lead for internal and client projects
-          - Uplift engineers through pair programming, code reviews, and 1-on-1
-            discussions
-          - Architect client solutions. Build POCs, MVPs, and further
-            iterations. Coordinate work within the delivery team
+          - Technical delivery lead for internal and client engagements. These have notably focused on Backstage plugin development, Observability, Disaster Recovery planning, and AI driven development
+          - Uplift engineers through pair programming, code reviews, and 1-on-1 guidance
+          - Architect client solutions. Build POCs, MVPs, and further iterations. Coordinate work within the delivery team
           - A Chair for Liatrio's Observability TAG (Tactical Advisory Group)
-        Badges: ["Observability", "Cloud Native"]
+        Badges: ["AI", "Cloud Native", "Observability"]
   - Employer: Southwest Airlines
     Place: Remote
     Positions:
@@ -116,7 +115,7 @@ Skills:
       - Kustomize
       - Puppet
       - Skopeo
-      - Terraform
+      - Terraform + Terragrunt
   - Family: Hosting/Applications
     Items:
       - Composable Operator
@@ -125,7 +124,8 @@ Skills:
       - Istio
       - Jaeger
       - Kibana
-      - K8s + Operators
+      - K8s (EKS)
+      - K8s Operators
       - Open Telemetry
       - Postgres
       - Prometheus
@@ -135,11 +135,13 @@ Skills:
       - Bash
       - C#
       - Django
+      - Entity Framework
       - Go
       - Hiera
       - Javascript
       - JQuery
       - .Net
+      - OpenTelemetry SDK
       - Operator SDK
       - Python
       - Ruby
