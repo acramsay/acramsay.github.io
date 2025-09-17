@@ -1,9 +1,14 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    line-height: 1.7;
-    font-size: 1.12rem;
     color: $color-dark;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.12rem;
+    font-weight: 300;
+    /* The Roboto font blends some character combinations together. E.g. `fi`
+       When printing, the pdf rendering engine cannot identify these characters and
+       replaces them with the unicode replacement character, /u+fffd. The letter-spacing
+       solves this. */
+    letter-spacing: .01px;
+    line-height: 1.7;
 }
 
 .mainHeading {
