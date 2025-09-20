@@ -14,7 +14,7 @@ Contacts:
 Profile: |
   Successful systems engineer, developer, DevOps enthusiast, and leader with
   over a decade of experience in software development, architecture, hosting,
-  and operations. A passionate supporter of open source and automation at
+  and operations. A supporter of open source and automation at
   scale. Seeking new leadership role that maintains technical skills by
   fostering those of fellow engineers.
 
@@ -31,40 +31,40 @@ Experience:
       - Title: Lead DevOps Engineer
         Date: September 2023 - Present
         Details:
-          - Technical delivery lead for internal and client engagements. These have notably focused on Backstage plugin development, Observability, Disaster Recovery planning, and AI driven development
+          - Technical delivery lead for internal projects and 3 client engagements. These have notably focused on Backstage plugin development, Observability, Disaster Recovery planning, and AI driven development
           - Uplift engineers through pair programming, code reviews, and 1-on-1 guidance
           - Architect client solutions. Build POCs, MVPs, and further iterations. Coordinate work within the delivery team
           - A Chair for Liatrio's Observability TAG (Tactical Advisory Group)
-        Badges: ["AI", "Cloud Native", "Observability"]
+        Badges: ["AI", "CI/CD", "CNCF", "Kubernetes", "Observability"]
   - Employer: Southwest Airlines
     Place: Remote
     Positions:
       - Title: Senior Cloud DevOps Engineer
         Date: March 2023 - September 2023
         Details:
-          - "Elevated to Team Lead June 2023"
-          - "Led a team to architect and build an observability platform based on OpenTelemetry Collectors/Gateways, auto-instrumentation, Prometheus, Grafana, Opensearch, and a variety of AWS services"
+          - "Elevated to Team Lead June 2023 for 6 other engineers"
+          - "Led a team to architect and build an observability platform using OpenTelemetry Collectors/Gateways, auto-instrumentation, Prometheus, Grafana, Opensearch, and AWS services"
           - "Automated a weekly extract of org chart data using Python, AWS Lambda, SNS, S3, and Active Directory"
-        Badges: ["Observability", "AWS"]
+        Badges: ["AWS", "Observability", "Serverless"]
   - Employer: Bottomline
     Place: Remote
     Positions:
       - Title: Team Lead, Cloud Engineering
-        Badges: ["CI/CD", "Kubernetes"]
+        Badges: ["CI/CD", "CNCF", "Config Management", "Kubernetes", "Networking", "Observability"]
         Date: April 2022 - March 2023
         Details:
-          - "In addition to previous responsibilities, led team members by designing platform changes, acting as escalation for any technical challenges, and coordinating projects with other teams. Monitored numerous git repos for code quality, scalability, and clarity"
+          - "Led team members by designing platform changes, acting as escalation for any technical challenges, and coordinating projects with other teams"
+          - "Maintained ~50 git repos for code quality, scalability, and organizational clarity"
           - "Led project team to containerize our Jenkins infrastructure and pipelines"
-          - "Implemented Istio service mesh for approximately 50 applications with 7 team members from Development, Cloud Engineering, and Architecture"
-          - "Replaced Flux and many Jenkinsfiles by writing “Shanty”, a standalone tool that coordinates disparate Helm releases for distributed monoliths with shared configurations"
+          - "Implemented Istio service mesh for ~50 applications with 7 team members from Development, Cloud Engineering, and Architecture"
+          - "Replaced Flux and Jenkinsfiles by writing “Shanty”, a cli tool that coordinates disparate Helm releases with shared configurations. The implementation significantly reduced toil and error rates by compressing manually managed yaml from ~15,000 lines in ~900 files to ~1500 lines in ~30 files"
       - Title: Senior Cloud Engineer
-        Badges: ["CI/CD", "Kubernetes"]
+        Badges: ["CI/CD", "Config Management", "Kubernetes", "Networking", "Observability"]
         Date: October 2018 - April 2022
         Details:
-          - "Promoted to Senior August 2020"
-          - "Responsible for ~60 applications deployed to over 30 distinct environments including production and DR. In total, this amounts to hundreds of virtual machines and thousands of Kubernetes pods"
-          - "Built highly reusable code for CI/CD, monitoring, and supporting infrastructure"
-          - "Heavily contributed to the migration of nearly all applications from VMs into Kubernetes, accounting for networking, monitoring, and configuration at a dynamic scale"
+          - "Operated ~60 applications deployed to over 30 distinct environments including production and DR. In total, this amounts to hundreds of virtual machines and thousands of Kubernetes pods"
+          - "Built highly reusable code for CI/CD via Capistrano to facilitate the split of a monolithic api into 18 microservices"
+          - "Foremost contributor to the migration of ~50 applications from VMs workloads into Kubernetes"
           - "Developed a Kubernetes operator designed to configure the Big-IP F5 infrastructure via k8s resources"
           - "Educated coworkers on modern software architectures, tooling, and supporting technologies. Trained team members to be effective contributors using new processes and tools"
   - Employer: Linedata
@@ -72,24 +72,25 @@ Experience:
     Positions:
       - Title: Release and DevOps Engineer
         Date: December 2017 - October 2018
-        Badges: ["Build Automation"]
+        Badges: ["CI/CD"]
         Details:
           - "Developed and monitored automation in TFS and Jenkins to compile and package software for release"
           - "Analyzed and automated development processes with focus on decreasing development cycle duration and increasing release quality. Recommended process changes when automation was not appropriate"
-          - "Responsible for performing security scans of compiled code, submitting source code to escrow, and reviewing hotfixes for excessive risk"
+          - "Performed security scans of compiled code, submitted source code to escrow, and reviewed hotfixes for excessive risk"
       - Title: Senior Systems Engineer
         Date: March 2014 - December 2017
         Badges: ["Operations", "File Integration"]
         Details:
           - "Promoted to Senior October 2016"
-          - "Managed application, web, and database servers dedicated to hosting Linedata's “Front Office” product suite. Responsible for technical implementations, system monitoring, system deployment and automation, scripting development, software development, and performing system maintenance"
+          - "Managed application, web, and database servers dedicated to hosting Linedata's “Front Office” product suite. Implemented client installations, configured system monitoring, and automated system maintenance"
           - "Designed, built, and deployed file integrations to enable data flow between Linedata's core products and third party software systems. Frequently used SSIS, SQL, Powershell, Batch"
           - "Notably, designed, built, and implemented Portal 2, a distributed software suite made to accomplish several goals: centrally manage servers, execute load balanced jobs, and deliver controlled access to Linedata's support organization. Includes two distinct Django web sites and one C#.NET Windows service, deployed to over 30 servers"
       - Title: Senior Technical Support Specialist
         Date: May 2012 - March 2014
         Details:
           - "Promoted to Senior February, 2013"
-          - "Served as the third and final tier of technical and product support working directly with clients. Additionally, responsible for Linedata's hosted domain: operational monitoring, hosted client projects, and server maintenance"
+          - "Served as the third and final tier of technical and product support working directly with clients"
+          - "Operated Linedata's SAAS: operational monitoring, technical client implementations, and server maintenance"
           - "Tested product workflows, bugs, and performance issues to accommodate client needs"
           - "Collaborated with development teams to research and correct code issues"
       - Title: Technical Services Engineer
