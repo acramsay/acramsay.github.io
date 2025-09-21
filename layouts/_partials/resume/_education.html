@@ -4,14 +4,14 @@
     </div>
     <div class="sideSection__content">
         <ul>
-            {{ range .Education }}
+            {{ range .education }}
             <li class="education__item">
-                <div class="education__place">{{ .Place | safeHTML }}</div>
+                <div class="education__place">{{ .institution | safeHTML }}</div>
                 <div>
-                    <span class="education__degree">{{ .Degree | safeHTML }}</span>
-                    <span class="education__date">{{ .Date | safeHTML }}</span>
+                    <span class="education__degree">{{ .studyType }} {{ .area | safeHTML }}</span>
+                    <span class="education__date">{{ time.Format "January 2006" .endDate }}</span>
                 </div>
-                {{ if .Honors }}<div class="education__honors">{{ .Honors | safeHTML }}</div>{{ end }}
+                {{ if .score }}<div class="education__honors">{{ .score | safeHTML }}</div>{{ end }}
             </li>
             {{ end }}
         </ul>

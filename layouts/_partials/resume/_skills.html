@@ -5,11 +5,11 @@
     <div class="sideSection__content">
         <ul class="skills">
             <li>
-                {{ range .Skills }}
+                {{ range .skills }}
                 <ul class="skills__group">
-                    <span>{{ .Family | safeHTML }}</span>
+                    <span>{{ .name | safeHTML }}</span>
                     <br>
-                    {{ range .Items }}
+                    {{ range .keywords }}
                     <li>{{ . | safeHTML }}</li>
                     {{ end }}
                 </ul>

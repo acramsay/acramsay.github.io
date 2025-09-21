@@ -3,6 +3,6 @@
         <h2 class="section__title">Profile</h2>
     </div>
     <div class="section__content">
-        <p>{{ .Profile | safeHTML | emojify }}</p>
+        <p>{{ .basics.summary | safeHTML | emojify }}</p>
     </div>
 </div>

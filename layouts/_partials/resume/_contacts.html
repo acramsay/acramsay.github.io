@@ -1,8 +1,18 @@
 <div class="sideSection contact">
     <ul>
-        {{ range .Contacts }}
+        {{ if .basics.email -}}
         <li class="contact__item">
-            <i class="{{ .Icon }}"></i><span>{{ .Info | safeHTML }}</span>
+            <i class="fas fa-envelope"></i><span>{{ .basics.email | safeHTML }}</span>
+        </li>
+        {{- end }}
+        {{ if .basics.location -}}
+        <li class="contact__item">
+            <i class="fas fa-map-marker-alt"></i><span>{{ .basics.location.city | safeHTML }}, {{ .basics.location.countryCode | safeHTML }}</span>
+        </li>
+        {{- end }}
+        {{ range .basics.profiles }}
+        <li class="contact__item">
+            <i class="fa fa-{{ .network | lower }}"></i><span><a href="{{ .url }}">{{ .network }}: {{ .username }}</a></span>
         </li>
         {{ end }}
     </ul>

@@ -1,7 +1,7 @@
 {{ define "content" }}
 {{ $data := .Site.Data.resume }}
 <div class="content__left">
-  <h1 class="mainHeading">{{ $data.FirstName }} <span>{{ $data.LastName }}</span></h1>
+  <h1 class="mainHeading">{{ index (split $data.basics.name " ") 0 }} <span>{{ index (split $data.basics.name " ") 1 }}</span></h1>
   {{ partial "resume/_profile.html" $data }}
   {{ partial "resume/_experience.html" $data }}
 </div>
