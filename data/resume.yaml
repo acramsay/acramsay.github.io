@@ -14,11 +14,11 @@ basics:
       url: https://www.linkedin.com/in/alexramsay
       network: LinkedIn
   summary: |
-    Successful systems engineer, developer, DevOps enthusiast, and leader with
-    over a decade of experience in software development, architecture, hosting,
-    and operations. A supporter of open source and automation at
-    scale. Seeking new leadership role that maintains technical skills by
-    fostering those of fellow engineers.
+    Accomplished systems engineer and DevOps leader with 15 years of experience
+    driving software architecture, cloud operations, and engineering team
+    development. Expert in open source technologies and scalable automation.
+    Currently leading technical delivery for client engagements while mentoring
+    engineers to advance their skills
 
 education:
   - area: Mathematical Sciences
@@ -33,19 +33,19 @@ work:
     position: Lead DevOps Engineer
     startDate: 2023-09-01
     highlights:
-      - Technical delivery lead for internal projects and 3 client engagements. These have notably focused on Backstage plugin development, Observability, Disaster Recovery planning, and AI driven development
-      - Uplift engineers through pair programming, code reviews, and 1-on-1 guidance
-      - Architect client solutions. Build POCs, MVPs, and further iterations. Coordinate work within the delivery team
-      - A Chair for Liatrio's Observability TAG (Tactical Advisory Group)
-    badges: ["AI", "CI/CD", "CNCF", "Kubernetes", "Observability"]
+      - Lead technical delivery teams for internal projects and multiple client engagements, focusing on Backstage plugin development, observability practices, disaster recovery planning, and AI-driven development
+      - Mentor and uplift engineering teams through pair programming, comprehensive code reviews, and 1-on-1 guidance sessions
+      - Design and architect client solutions by building POCs, MVPs, and iterative enhancements while coordinating cross-functional delivery teams
+      - Serve as Chair for Liatrio's Observability Tactical Advisory Group (TAG), providing strategic direction for observability practices
+    badges: ["AI", "CI/CD", "CNCF", "Kubernetes", "Observability", "Platform Engineering"]
   - name: Southwest Airlines
     location: Remote
     position: Senior Cloud DevOps Engineer
     startDate: 2023-03-01
     endDate: 2023-09-01
     highlights:
-      - "Elevated to Team Lead June 2023 for 6 other engineers"
-      - "Led a team to architect and build an observability platform using OpenTelemetry Collectors/Gateways, auto-instrumentation, Prometheus, Grafana, Opensearch, and AWS services"
+      - "Promoted to Team Lead June 2023, managing and mentoring a team of 6 engineers"
+      - "Led the team to architect and implement an observability platform leveraging OpenTelemetry Collectors/Gateways, auto-instrumentation, Prometheus, Grafana, Opensearch, and AWS services"
       - "Automated a weekly extract of org chart data using Python, AWS Lambda, SNS, S3, and Active Directory"
     badges: ["AWS", "Observability", "Serverless"]
   - name: Bottomline
@@ -55,21 +55,22 @@ work:
     endDate: 2023-03-01
     badges: ["CI/CD", "CNCF", "Config Management", "Kubernetes", "Networking", "Observability"]
     highlights:
-      - "Led team members by designing platform changes, acting as escalation for any technical challenges, and coordinating projects with other teams"
-      - "Maintained ~50 git repos for code quality, scalability, and organizational clarity"
-      - "Led project team to containerize our Jenkins infrastructure and pipelines"
-      - "Implemented Istio service mesh for ~50 applications with 7 team members from Development, Cloud Engineering, and Architecture"
-      - "Replaced Flux and Jenkinsfiles by writing “Shanty”, a cli tool that coordinates disparate Helm releases with shared configurations. The implementation significantly reduced toil and error rates by compressing manually managed yaml from ~15,000 lines in ~900 files to ~1500 lines in ~30 files"
+      - "Led engineering team by designing platform enhancements, serving as the technical escalation point, and coordinating cross-team projects"
+      - "Maintained code quality and organizational clarity across ~50 Git repositories, ensuring scalability and best practices"
+      - "Directed project team to containerize Jenkins infrastructure and pipelines"
+      - "Implemented Istio gateways and service mesh for ~50 applications with 7 team members from Development, Cloud Engineering, and Architecture"
+      - "Developed \"Shanty\", a CLI tool to replace Flux and Jenkinsfiles, reducing configuration management overhead by 90% (from ~15,000 lines in 900 files to ~1,500 lines in 30 files) and significantly decreasing toil and error rates"
   - name: Bottomline
     position: Senior Cloud Engineer
     badges: ["CI/CD", "Config Management", "Kubernetes", "Networking", "Observability"]
     startDate: 2018-10-01
     endDate: 2022-04-01
     highlights:
-      - "Operated ~60 applications deployed to over 30 distinct environments including production and DR. In total, this amounts to hundreds of virtual machines and thousands of Kubernetes pods"
-      - "Built highly reusable code for CI/CD via Capistrano to facilitate the split of a monolithic api into 18 microservices"
-      - "Foremost contributor to the migration of ~50 applications from VMs workloads into Kubernetes"
-      - "Developed a Kubernetes operator designed to configure the Big-IP F5 infrastructure via k8s resources"
+      - "Managed operations for ~60 applications deployed across 30+ environments (including production and DR), amassing to hundreds of virtual machines and thousands of Kubernetes pods"
+      - "Engineered highly reusable CI/CD code using Capistrano to facilitate decomposition of monolithic API into 18 microservices"
+      - "Led the migration of ~50 applications from traditional VMs workloads to Kubernetes"
+      - "Modernized runtime enviroment"
+      - "Developed a Kubernetes operator designed to automate the Big-IP F5 configuration via Kubernetes native resources"
       - "Educated coworkers on modern software architectures, tooling, and supporting technologies. Trained team members to be effective contributors using new processes and tools"
   - name: Linedata
     location: Boston, MA and Remote
