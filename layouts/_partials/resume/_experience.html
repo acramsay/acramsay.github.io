@@ -5,10 +5,11 @@
     </div>
     <div class="section__content">
         <div class="experience">
-            <div class="experience__item">
             {{ range .work -}}
             {{ if and $prevCompany (ne .name $prevCompany) -}}
             </div>
+            {{ end -}}
+            {{ if or (not $prevCompany) (ne .name $prevCompany) -}}
             <div class="experience__item">
                 <div class="experience__header">
                     <h3 class="experience__company">

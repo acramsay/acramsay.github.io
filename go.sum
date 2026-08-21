@@ -235,8 +235,8 @@ github.com/frankban/quicktest v1.14.6 h1:7Xjx+VpznH+oBnejlPUj8oUpdxnVs4f8XU8WnHk
 github.com/frankban/quicktest v1.14.6/go.mod h1:4ptaffx2x8+WTWXmUCuVU6aPUX1/Mz7zb5vbUoiM6w0=
 github.com/fsnotify/fsnotify v1.9.0 h1:2Ml+OJNzbYCTzsxtv8vKSFD9PbJjmhYF14k/jKC7S9k=
 github.com/fsnotify/fsnotify v1.9.0/go.mod h1:8jBTzvmWwFyi3Pb8djgCCO5IBqzKJ/Jwo8TRcHyHii0=
-github.com/gethugothemes/hugo-modules/gallery-slider v0.0.0-20250702070945-cd8319c6b26e h1:NgDMR7siU4Co054+OtF3mbm5LZxeILQM7RxGWZQWsFk=
-github.com/gethugothemes/hugo-modules/gallery-slider v0.0.0-20250702070945-cd8319c6b26e/go.mod h1:MvQ2js/ofZ22CTX5wuvE+dC0rMe6C5HAWL2fEOu/yzE=
+github.com/gethugothemes/hugo-modules/gallery-slider v0.0.0-20260701054856-10b1d2cdc11a h1:e1u4GKgsPvmJH7iIkobae70+5IZnAPI3kX2Vb898Aak=
+github.com/gethugothemes/hugo-modules/gallery-slider v0.0.0-20260701054856-10b1d2cdc11a/go.mod h1:MvQ2js/ofZ22CTX5wuvE+dC0rMe6C5HAWL2fEOu/yzE=
 github.com/getkin/kin-openapi v0.133.0 h1:pJdmNohVIJ97r4AUFtEXRXwESr8b0bD721u/Tz6k8PQ=
 github.com/getkin/kin-openapi v0.133.0/go.mod h1:boAciF6cXk5FhPqe/NQeBTeenbjqU4LhWBf09ILVvWE=
 github.com/ghodss/yaml v1.0.0 h1:wQHKEahhL6wmXdzwWG11gIVCkOv05bNOh+Rxn0yngAk=
@@ -404,8 +404,8 @@ github.com/kylelemons/godebug v1.1.0 h1:RPNrshWIDI6G2gRW9EHilWtl7Z6Sb1BR0xunSBf0
 github.com/kylelemons/godebug v1.1.0/go.mod h1:9/0rRGxNHcop5bhtWyNeEfOS8JIWk580+fNqagV/RAw=
 github.com/kyokomi/emoji/v2 v2.2.13 h1:GhTfQa67venUUvmleTNFnb+bi7S3aocF7ZCXU9fSO7U=
 github.com/kyokomi/emoji/v2 v2.2.13/go.mod h1:JUcn42DTdsXJo1SWanHh4HKDEyPaR5CqkmoirZZP9qE=
-github.com/luizdepra/hugo-coder v0.0.0-20250829110205-cb13ec467161 h1:t6eaDBh8SWBpVo2Q1Gl2Bnnnw8bDN+Ns9TS87T7pBFY=
-github.com/luizdepra/hugo-coder v0.0.0-20250829110205-cb13ec467161/go.mod h1:9EQBf2rU+NPjlohGuKcEgdqSeOc3tIQoOty4xPpuUQ4=
+github.com/luizdepra/hugo-coder v0.0.0-20260618030327-58d956f41c05 h1:XRAxtQNL75AHMjd96KlDRHjCxHh5Znedgbtqw/ALqHo=
+github.com/luizdepra/hugo-coder v0.0.0-20260618030327-58d956f41c05/go.mod h1:9EQBf2rU+NPjlohGuKcEgdqSeOc3tIQoOty4xPpuUQ4=
 github.com/magefile/mage v1.15.0 h1:BvGheCMAsG3bWUDbZ8AyXXpCNwU9u5CB6sM+HNb9HYg=
 github.com/magefile/mage v1.15.0/go.mod h1:z5UZb/iS3GoOSn0JgWuiw7dxlurVYTu+/jHXqQg881A=
 github.com/mailru/easyjson v0.7.7 h1:UGYAvKxe3sBsEDzO8ZeWOSlIQfWFlxbzLZe7hwFURr0=

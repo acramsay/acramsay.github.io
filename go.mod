@@ -78,7 +78,7 @@ require (
 	github.com/felixge/httpsnoop v1.0.4 // indirect
 	github.com/frankban/quicktest v1.14.6 // indirect
 	github.com/fsnotify/fsnotify v1.9.0 // indirect
-	github.com/gethugothemes/hugo-modules/gallery-slider v0.0.0-20250702070945-cd8319c6b26e // indirect
+	github.com/gethugothemes/hugo-modules/gallery-slider v0.0.0-20260701054856-10b1d2cdc11a // indirect
 	github.com/getkin/kin-openapi v0.133.0 // indirect
 	github.com/ghodss/yaml v1.0.0 // indirect
 	github.com/go-jose/go-jose/v4 v4.1.1 // indirect
@@ -114,7 +114,7 @@ require (
 	github.com/kr/text v0.2.0 // indirect
 	github.com/kylelemons/godebug v1.1.0 // indirect
 	github.com/kyokomi/emoji/v2 v2.2.13 // indirect
-	github.com/luizdepra/hugo-coder v0.0.0-20250829110205-cb13ec467161 // indirect
+	github.com/luizdepra/hugo-coder v0.0.0-20260618030327-58d956f41c05 // indirect
 	github.com/magefile/mage v1.15.0 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/makeworld-the-better-one/dither/v2 v2.4.0 // indirect

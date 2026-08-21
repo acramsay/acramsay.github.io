@@ -9,7 +9,13 @@ vars:
   GOBUILDTAGS: extended
 
 tasks:
+  default:
+    desc: List available tasks
+    cmds:
+      - task --list
+
   cibuild:
+    desc: Build the site for production
     deps:
       - install
       - update
@@ -17,6 +23,7 @@ tasks:
       - '{{ .HUGO }} --gc --environment production --minify --baseURL "{{ .BASEURL | default "http://localhost/"}}"'
 
   clean:
+    desc: Remove tools, build output, and caches
     cmds:
       - task: stop
       - go clean --modcache
@@ -24,6 +31,7 @@ tasks:
       - rm -rf .tools public resources || true
 
   install:
+    desc: Build and install Hugo and other tools
     vars:
       TOOLS:
         sh: cat tools.go | grep _ | awk -F'"' '{print $2}'
@@ -33,11 +41,13 @@ tasks:
         cmd: go build -C {{ .TOOLSDIR }} -o {{ base .TOOL }} -trimpath -tags {{ .GOBUILDTAGS | default "\"\"" }} {{ .TOOL }}
 
   restart:
+    desc: Stop and start the Hugo dev server
     cmds:
       - task: stop
       - task: start
 
   restart-clean:
+    desc: Stop, clean, reinstall, and start the Hugo dev server
     cmds:
       - task: stop
       - task: clean
@@ -45,19 +55,23 @@ tasks:
       - task: start
 
   start:
+    desc: Start the Hugo dev server in the background
     cmds:
       - "{{ .HUGO }} server -D &"
       - sleep .1 # Workaround to this issue: https://github.com/go-task/task/issues/928
 
   stop:
+    desc: Stop the Hugo dev server
     cmds:
       - pkill -SIGTERM -ef {{ .HUGO }} || true
 
   tidy:
+    desc: Run go mod tidy and update Hugo modules
     cmds:
       - go mod tidy
       - task: update
 
   update:
+    desc: Update Hugo modules to latest versions
     cmds:
       - "{{ .HUGO }} mod get -u"
