@@ -1,7 +1,6 @@
 ---
 title: Projects
-date: 2024-01-27T17:00:00.000Z
 draft: false
 ---
 
-Coming Soon!
+A few things I've built, forked, or contributed to.

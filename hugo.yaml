@@ -33,6 +33,7 @@ params:
   colorScheme: auto
   customCSS:
     - css/avatar.css
+    - css/projects.css
     - plugins/glightbox/glightbox.css
     - plugins/swiper/swiper-bundle.css
   customJS:
