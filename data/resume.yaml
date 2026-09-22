@@ -37,6 +37,8 @@ work:
       - Mentor and uplift engineering teams through pair programming, comprehensive code reviews, and 1-on-1 guidance sessions
       - Design and architect client solutions by building POCs, MVPs, and iterative enhancements while coordinating cross-functional delivery teams
       - Serve as Chair for Liatrio's Observability Tactical Advisory Group (TAG), providing strategic direction for observability practices
+      - Built a "skills marketplace" that validated AI agent skills for safety and security in a CI pipeline before distribution, combining LLM scanners with sandboxed behavior tests
+      - Evaluated AI gateways, with deep dives into LiteLLM, OpenRouter, and Vercel's AI Gateway, to compare model routing, cost controls, and observability across providers
     badges: ["AI", "CI/CD", "CNCF", "Kubernetes", "Observability", "Platform Engineering"]
   - name: Southwest Airlines
     location: Remote
