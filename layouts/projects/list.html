@@ -13,7 +13,13 @@
   {{ range .Pages }}
   <details class="project-card">
     <summary>
-      <h2>{{ .Title }}</h2>
+      <h2>
+        {{ if hasPrefix .Title "BLOG " }}
+          <span class="blog-flag">BLOG</span> {{ strings.TrimPrefix "BLOG " .Title }}
+        {{ else }}
+          {{ .Title }}
+        {{ end }}
+      </h2>
       {{ with .Description }}<p>{{ . }}</p>{{ end }}
     </summary>
     <div class="project-body">

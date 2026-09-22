@@ -49,6 +49,12 @@
       flex-shrink: 0;
     }
 
+    .blog-flag {
+      color: #1565c0;
+      letter-spacing: 0.04em;
+      font-style: italic;
+    }
+
     p {
       margin: 0;
       font-size: 1.5rem;
@@ -95,8 +101,13 @@ body.colorscheme-dark .project-card {
   .project-body {
     border-color: #424242;
   }
+
+  .blog-flag {
+    color: #42a5f5;
+  }
 }
 
+body.colorscheme-dark .project-card,
 body.colorscheme-auto .project-card {
   @media (prefers-color-scheme: dark) {
     background-color: #2a2a2a;
@@ -112,6 +123,10 @@ body.colorscheme-auto .project-card {
 
     .project-body {
       border-color: #424242;
+    }
+
+    .blog-flag {
+      color: #42a5f5;
     }
   }
 }
