@@ -14,11 +14,10 @@ basics:
       url: https://www.linkedin.com/in/alexramsay
       network: LinkedIn
   summary: |
-    Accomplished systems engineer and DevOps leader with 15 years of experience
-    driving software architecture, cloud operations, and engineering team
-    development. Expert in open source technologies and scalable automation.
-    Currently leading technical delivery for client engagements while mentoring
-    engineers to advance their skills
+    Software developer and DevOps lead with 15 years of experience, working up
+    from systems administration into cloud platform engineering and team
+    leadership. Currently leading technical delivery for client engagements at
+    Liatrio while mentoring engineers
 
 education:
   - area: Mathematical Sciences
@@ -47,7 +46,7 @@ work:
     endDate: 2023-09-01
     highlights:
       - "Promoted to Team Lead June 2023, managing and mentoring a team of 6 engineers"
-      - "Led the team to architect and implement an observability platform leveraging OpenTelemetry Collectors/Gateways, auto-instrumentation, Prometheus, Grafana, Opensearch, and AWS services"
+      - "Architected an observability platform with the team, using OpenTelemetry Collectors/Gateways, auto-instrumentation, Prometheus, Grafana, OpenSearch, and AWS services"
       - "Automated a weekly extract of org chart data using Python, AWS Lambda, SNS, S3, and Active Directory"
     badges: ["AWS", "Observability", "Serverless"]
   - name: Bottomline
@@ -57,21 +56,20 @@ work:
     endDate: 2023-03-01
     badges: ["CI/CD", "CNCF", "Config Management", "Kubernetes", "Networking", "Observability"]
     highlights:
-      - "Led engineering team by designing platform enhancements, serving as the technical escalation point, and coordinating cross-team projects"
+      - "Designed platform enhancements for the cloud engineering team, served as the technical escalation point, and coordinated cross-team projects"
       - "Maintained code quality and organizational clarity across ~50 Git repositories, ensuring scalability and best practices"
-      - "Directed project team to containerize Jenkins infrastructure and pipelines"
-      - "Implemented Istio gateways and service mesh for ~50 applications with 7 team members from Development, Cloud Engineering, and Architecture"
-      - "Developed \"Shanty\", a CLI tool to replace Flux and Jenkinsfiles, reducing configuration management overhead by 90% (from ~15,000 lines in 900 files to ~1,500 lines in 30 files) and significantly decreasing toil and error rates"
+      - "Led project to containerize the Jenkins infrastructure and build pipelines"
+      - "Rolled out Istio gateways and service mesh configuration for ~50 applications with 7 engineers from Development, Cloud Engineering, and Architecture"
+      - "Developed \"Shanty\", a CLI tool that replaced Flux and Jenkinsfiles, cutting configuration management overhead by 90% (~15,000 lines across 900 files to ~1,500 across 30)"
   - name: Bottomline
     position: Senior Cloud Engineer
     badges: ["CI/CD", "Config Management", "Kubernetes", "Networking", "Observability"]
     startDate: 2018-10-01
     endDate: 2022-04-01
     highlights:
-      - "Managed operations for ~60 applications deployed across 30+ environments (including production and DR), amassing to hundreds of virtual machines and thousands of Kubernetes pods"
+      - "Managed operations for ~60 applications deployed across 30+ environments (including production and DR), spanning hundreds of virtual machines and thousands of Kubernetes pods"
       - "Engineered highly reusable CI/CD code using Capistrano to facilitate decomposition of monolithic API into 18 microservices"
-      - "Led the migration of ~50 applications from traditional VMs workloads to Kubernetes"
-      - "Modernized runtime enviroment"
+      - "Migrated ~50 applications from VM workloads to Kubernetes"
       - "Developed a Kubernetes operator designed to automate the Big-IP F5 configuration via Kubernetes native resources"
       - "Educated coworkers on modern software architectures, tooling, and supporting technologies. Trained team members to be effective contributors using new processes and tools"
   - name: Linedata
@@ -121,8 +119,8 @@ skills:
       - Docker
       - Flux
       - Git
-      - Github Actions
-      - Gitlab CI/CD
+      - GitHub Actions
+      - GitLab CI/CD
       - Helm
       - Jenkins
       - Kaniko
@@ -140,7 +138,8 @@ skills:
       - Kibana
       - K8s (EKS)
       - K8s Operators
-      - Open Telemetry
+      - LiteLLM
+      - OpenTelemetry
       - Postgres
       - Prometheus
       - RHEL
@@ -151,10 +150,12 @@ skills:
       - Django
       - Entity Framework
       - Go
+      - Go Chi
+      - Chioas
       - Hiera
-      - Javascript
-      - JQuery
-      - .Net
+      - JavaScript
+      - jQuery
+      - .NET
       - OpenTelemetry SDK
       - Operator SDK
       - Python

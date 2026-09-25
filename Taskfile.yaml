@@ -56,6 +56,7 @@ tasks:
 
   start:
     desc: Start the Hugo dev server in the background
+    if: "! pgrep -f '{{ .HUGO }} server'"
     cmds:
       - "{{ .HUGO }} server -D &"
       - sleep .1 # Workaround to this issue: https://github.com/go-task/task/issues/928
