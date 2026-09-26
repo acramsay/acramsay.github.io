@@ -4,13 +4,11 @@ languagecode: "en-us"
 defaultcontentlanguage: "en-us"
 timeZone: America/New_York
 
-modules:
+module:
+  proxy: https://proxy.golang.org
   imports:
     - path: github.com/luizdepra/hugo-coder
     - path: github.com/gethugothemes/hugo-modules/gallery-slider
-theme:
-  - github.com/luizdepra/hugo-coder
-  - github.com/gethugothemes/hugo-modules/gallery-slider
 
 # hugo-coder settings
 markup:
