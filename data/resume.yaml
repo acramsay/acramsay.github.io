@@ -33,10 +33,9 @@ work:
     startDate: 2023-09-01
     endDate: 2026-09-01
     highlights:
-      - Led technical delivery across 6 client engagements and internal projects, serving as a hands-on individual contributor, a full-time tech lead for teams up to 5 engineers, and everything in between
-      - Worked across Backstage plugin development, observability practices, disaster recovery planning, and AI-driven development
-      - Mentored engineering teams through pair programming, comprehensive code reviews, and 1-on-1 guidance
-      - Designed and architected client solutions by building POCs, MVPs, and iterative enhancements while coordinating cross-functional delivery teams
+      - Led technical delivery across 6 client engagements and internal projects, serving as a hands-on individual contributor, a full-time tech lead for teams up to 5 engineers, and everything in between. Mentored engineering teams through pair programming, comprehensive code reviews, and 1-on-1 guidance
+      - Client engagements spanned Backstage, observability, disaster recovery resiliency, GitHub migrations, and AI-driven development
+      - Designed and architected client solutions by building POCs and MVPs while coordinating across delivery teams
       - Served as Chair for Liatrio's Observability Tactical Advisory Group (TAG), providing strategic direction for observability practices
       - Built an agent skills marketplace that validated AI agent skills for safety and security in a CI pipeline before distribution, combining LLM scanners with sandboxed behavior tests
       - Evaluated AI gateways including LiteLLM, OpenRouter, and Vercel's AI Gateway, comparing model routing, cost controls, and observability. Presented findings as a sales tool via a new public facing site
