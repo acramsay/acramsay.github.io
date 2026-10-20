@@ -16,8 +16,8 @@ basics:
   summary: |
     Software developer and DevOps lead with 15 years of experience, working up
     from systems administration into cloud platform engineering and team
-    leadership. Currently leading technical delivery for client engagements at
-    Liatrio while mentoring engineers
+    leadership. A skilled individual contributor and proven team leader,
+    mentoring engineers and setting technical direction
 
 education:
   - area: Mathematical Sciences
@@ -31,13 +31,15 @@ work:
     location: Remote
     position: Lead DevOps Engineer
     startDate: 2023-09-01
+    endDate: 2026-09-01
     highlights:
-      - Lead technical delivery teams for internal projects and multiple client engagements, focusing on Backstage plugin development, observability practices, disaster recovery planning, and AI-driven development
-      - Mentor and uplift engineering teams through pair programming, comprehensive code reviews, and 1-on-1 guidance sessions
-      - Design and architect client solutions by building POCs, MVPs, and iterative enhancements while coordinating cross-functional delivery teams
-      - Serve as Chair for Liatrio's Observability Tactical Advisory Group (TAG), providing strategic direction for observability practices
-      - Built a "skills marketplace" that validated AI agent skills for safety and security in a CI pipeline before distribution, combining LLM scanners with sandboxed behavior tests
-      - Evaluated AI gateways, with deep dives into LiteLLM, OpenRouter, and Vercel's AI Gateway, to compare model routing, cost controls, and observability across providers
+      - Led technical delivery across 6 client engagements and internal projects, serving as a hands-on individual contributor, a full-time tech lead for teams up to 5 engineers, and everything in between
+      - Worked across Backstage plugin development, observability practices, disaster recovery planning, and AI-driven development
+      - Mentored engineering teams through pair programming, comprehensive code reviews, and 1-on-1 guidance
+      - Designed and architected client solutions by building POCs, MVPs, and iterative enhancements while coordinating cross-functional delivery teams
+      - Served as Chair for Liatrio's Observability Tactical Advisory Group (TAG), providing strategic direction for observability practices
+      - Built an agent skills marketplace that validated AI agent skills for safety and security in a CI pipeline before distribution, combining LLM scanners with sandboxed behavior tests
+      - Evaluated AI gateways including LiteLLM, OpenRouter, and Vercel's AI Gateway, comparing model routing, cost controls, and observability. Presented findings as a sales tool via a new public facing site
     badges: ["AI", "CI/CD", "CNCF", "Kubernetes", "Observability", "Platform Engineering"]
   - name: Southwest Airlines
     location: Remote
@@ -91,7 +93,7 @@ work:
       - "Promoted to Senior October 2016"
       - "Managed application, web, and database servers dedicated to hosting Linedata's “Front Office” product suite. Implemented client installations, configured system monitoring, and automated system maintenance"
       - "Designed, built, and deployed file integrations to enable data flow between Linedata's core products and third party software systems. Frequently used SSIS, SQL, Powershell, Batch"
-      - "Notably, designed, built, and implemented Portal 2, a distributed software suite made to accomplish several goals: centrally manage servers, execute load balanced jobs, and deliver controlled access to Linedata's support organization. Includes two distinct Django web sites and one C#.NET Windows service, deployed to over 30 servers"
+      - "Notably designed, built, and implemented Portal 2, a distributed software suite made to centrally manage servers, execute load balanced jobs, and deliver controlled access to Linedata's support organization. Includes two distinct Django web sites and one C#.NET Windows service, deployed to over 30 servers"
   - name: Linedata
     position: Senior Technical Support Specialist
     startDate: 2012-05-01

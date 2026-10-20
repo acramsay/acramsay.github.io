@@ -10,9 +10,14 @@
             <i class="fas fa-map-marker-alt"></i><span>{{ .basics.location.city | safeHTML }}, {{ .basics.location.countryCode | safeHTML }}</span>
         </li>
         {{- end }}
+        {{ if .basics.website -}}
+        <li class="contact__item">
+            <i class="fas fa-globe"></i><span><a class="contact__link" href="{{ .basics.website }}">{{ .basics.website | strings.TrimPrefix "https://" }}</a></span>
+        </li>
+        {{- end }}
         {{ range .basics.profiles }}
         <li class="contact__item">
-            <i class="fa fa-{{ .network | lower }}"></i><span><a href="{{ .url }}">{{ .network }}: {{ .username }}</a></span>
+            <i class="fa fa-{{ .network | lower }}"></i><span><a class="contact__link" href="{{ .url }}">{{ .network }}: {{ .username }}</a></span>
         </li>
         {{ end }}
     </ul>
