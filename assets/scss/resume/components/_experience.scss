@@ -1,8 +1,4 @@
 .experience {
-    &__extra_padding {
-        padding-top: 4rem !important;
-    }
-
     &__item {
         display: block;
         position: relative;
@@ -55,12 +51,16 @@
         margin-left: 1rem;
     }
 
+    // No longer headings, so restore the <h3> defaults they relied on
     &__date,
     &__place {
         float: right;
         text-align: right;
         width: 40%;
         color: $color-secondary;
+        font-size: 1.17em;
+        font-weight: bold;
+        line-height: normal;
     }
 
     &__date {

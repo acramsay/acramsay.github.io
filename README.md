@@ -8,6 +8,11 @@ Additionally, [Almeida CV](https://themes.gohugo.io/themes/almeida-cv/) was used
 as a hugo module but required significant changes to merge with the Coder theme.
 Thus, the Aleida CV content was copied to this repo and modified accordingly.
 
+## Resume PDF
+
+`task resume:pdf` renders the resume to an optimized PDF using headless
+Chromium.
+
 ## [Favicon Generator](https://favicon.io/favicon-generator/)
 
 ```yaml

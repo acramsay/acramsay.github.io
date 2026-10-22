@@ -37,7 +37,7 @@ tasks:
         sh: cat tools.go | grep _ | awk -F'"' '{print $2}'
     cmds:
       - mkdir -p {{ .TOOLSDIR }}
-      - for: { var: TOOLS, as: TOOL }
+      - for: {var: TOOLS, as: TOOL}
         cmd: go build -C {{ .TOOLSDIR }} -o {{ base .TOOL }} -trimpath -tags {{ .GOBUILDTAGS | default "\"\"" }} {{ .TOOL }}
 
   restart:
@@ -53,6 +53,17 @@ tasks:
       - task: clean
       - task: install
       - task: start
+
+  resume:pdf:
+    desc: Render the resume to an optimized PDF in ~/Downloads
+    vars:
+      URL: http://localhost:1313/resume/
+      PDF: '{{ joinPath .HOME "Downloads" "Resume - Alex Ramsay.pdf" }}'
+    preconditions:
+      - sh: curl --silent --fail --output /dev/null '{{ .URL }}'
+        msg: 'local server is not running'
+    cmds:
+      - chromium --headless --no-pdf-header-footer --generate-pdf-document-outline --print-to-pdf='{{ .PDF }}' '{{ .URL }}'
 
   start:
     desc: Start the Hugo dev server in the background

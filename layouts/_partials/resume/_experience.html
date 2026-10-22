@@ -15,15 +15,15 @@
                     <h3 class="experience__company">
                         {{ .name | safeHTML }}
                     </h3>
-                    <h3 class="experience__place">{{ .location | safeHTML }}</h3>
+                    <div class="experience__place">{{ .location | safeHTML }}</div>
                 </div>
             {{- end }}
                 <div class="experience__job">
                     <div class="experience__subheader">
-                        <h3 class="experience__position">
+                        <h4 class="experience__position">
                             {{ .position | safeHTML}}
-                        </h3>
-                        <h3 class="experience__date">{{ time.Format "January 2006" .startDate }} - {{ if .endDate }}{{time.Format "January 2006" .endDate }}{{ else }}Present{{ end }}</h3>
+                        </h4>
+                        <div class="experience__date">{{ time.Format "January 2006" .startDate }} - {{ if .endDate }}{{time.Format "January 2006" .endDate }}{{ else }}Present{{ end }}</div>
                     </div>
                     <ul>
                         {{ range .highlights }}
