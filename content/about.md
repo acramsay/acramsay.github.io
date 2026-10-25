@@ -11,7 +11,7 @@ and chickens (when the bears allow it). This is Johan:
 
 {{< figure src="/images/johan.jpeg" title="The Prettiest Rooster" width="50%" >}}
 
-Professionally, I've spent the last {{% years-since 2011 %}} years as a systems
+Professionally, I've spent the last {{< years-since 2011 >}} years as a systems
 engineer, software developer, and DevOps enthusiast. I don't just write code; I
 thrive on organizing intricate systems, engineering high-quality solutions, and
 sharing my experience and passion with less seasoned team members. Most
