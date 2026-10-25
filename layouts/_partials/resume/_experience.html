@@ -1,8 +1,6 @@
 {{ $prevCompany := "" }}
-<div id="experience" class="section">
-    <div class="section__heading">
-        <h2 class="section__title">Experience</h2>
-    </div>
+<section id="experience" class="section">
+    <h2 class="section__title">Experience</h2>
     <div class="section__content">
         <div class="experience">
             {{ range .work -}}
@@ -12,35 +10,24 @@
             {{ if or (not $prevCompany) (ne .name $prevCompany) -}}
             <div class="experience__item">
                 <div class="experience__header">
-                    <h3 class="experience__company">
-                        {{ .name | safeHTML }}
-                    </h3>
-                    <div class="experience__place">{{ .location | safeHTML }}</div>
+                    <h3 class="experience__company">{{ .name | safeHTML }}</h3>
+                    <div class="experience__place">{{ partial "resume/_icon.html" "location" }}{{ .location | safeHTML }}</div>
                 </div>
             {{- end }}
                 <div class="experience__job">
                     <div class="experience__subheader">
-                        <h4 class="experience__position">
-                            {{ .position | safeHTML}}
-                        </h4>
-                        <div class="experience__date">{{ time.Format "January 2006" .startDate }} - {{ if .endDate }}{{time.Format "January 2006" .endDate }}{{ else }}Present{{ end }}</div>
+                        <h4 class="experience__position">{{ .position | safeHTML }}</h4>
+                        <div class="experience__date">{{ time.Format "Jan 2006" .startDate }} - {{ if .endDate }}{{ time.Format "Jan 2006" .endDate }}{{ else }}Present{{ end }}</div>
                     </div>
                     <ul>
                         {{ range .highlights }}
                         <li class="experience__bullet">{{ . | safeHTML }}</li>
                         {{ end }}
                     </ul>
-                    <div class="experience__badges">
-                        <ul>
-                            {{ range .badges }}
-                            <li class="experience__badge">{{ . }}</li>
-                            {{ end }}
-                        </ul>
-                    </div>
                 </div>
             {{- $prevCompany = .name }}
             {{- end }}
             </div>
         </div>
     </div>
-</div>
+</section>

@@ -1,26 +1,31 @@
 .skills {
+    list-style: none;
+
     &__group {
-        margin-bottom: 0.8rem;
+        margin-bottom: 1rem;
 
-        & span {
-            font-weight: 700;
-            display: inline-block;
-
-            &::after {
-                content: ":"
-            }
+        &:last-child {
+            margin-bottom: 0;
         }
+    }
+
+    &__name {
+        font-weight: 700;
+
+        &::after {
+            content: ': ';
+        }
+    }
+
+    &__keywords {
+        display: inline;
+        list-style: none;
 
         & li {
-            display: inline-block;
-            font-size: 105%;
-            font-weight: 400;
-            transition: all 0.2s ease-in-out;
-            padding: 0 1px;
-            border-radius: 2px;
+            display: inline;
 
             &:not(:last-child)::after {
-                content: ", "
+                content: ', ';
             }
         }
     }

@@ -11,39 +11,73 @@ html {
     background-color: $color-page-background;
 }
 
-.content {
-    width: $page-width;
-    min-height: $page-height;
-    background-color: $color-light;
-
-    @media screen and (min-width: 60rem) {
-        margin: 6rem 0;
-        margin-top: 2rem;
-        @include shadow(1);
-        @include hz-center;
-    }
-}
-
 body {
-    -webkit-print-color-adjust:exact !important;
-    print-color-adjust:exact !important;
     box-sizing: border-box;
-    margin: 0px;
+    margin: 0;
 }
 
-@media print {
-    html {
+// hugo-coder renders `.content` as a plain flex container. On the resume page it
+// doubles as the sheet of paper: a fixed-size white page with a drop shadow.
+@media screen {
+    .content {
+        width: $page-width;
+        min-height: $page-height;
         background-color: $color-light;
     }
+}
 
-    @page {
-        size: letter;
-        margin: 0.5in;
+@media screen and (min-width: 60rem) {
+    .content {
+        margin: 2rem auto 6rem;
+        @include shadow(1);
+    }
+}
+
+.resume {
+    width: $content-width;
+    margin: 0 auto;
+    padding: 4rem 0;
+
+    @media print {
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+// hugo-coder swaps the whole page to a dark palette. The resume is a light
+// document, so pin its colors in every scheme.
+@mixin resume-scheme {
+    color: $color-dark;
+
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $color-dark;
     }
 
-    .navigation,
-    .footer,
-    .float-container {
-        display: none !important;
+    .masthead__name {
+        color: $color-secondary;
+    }
+
+    .experience__place,
+    .experience__date,
+    .education__date,
+    .education__honors {
+        color: $color-secondary;
+    }
+}
+
+body.colorscheme-dark .content {
+    @include resume-scheme();
+}
+
+@media (prefers-color-scheme: dark) {
+    body.colorscheme-auto .content {
+        @include resume-scheme();
     }
 }

@@ -1,0 +1,20 @@
+// The PDF is parsed by ATS software, which reads the extracted text layer.
+// The layout is already single-column, so DOM order is the reading order; only
+// page setup and chrome removal are needed here.
+@media print {
+    html {
+        background-color: $color-light;
+    }
+
+    @page {
+        size: letter;
+        margin: 0.5in;
+    }
+
+    .navigation,
+    .footer,
+    .float-container {
+        display: none !important;
+    }
+
+}

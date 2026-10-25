@@ -1,0 +1,18 @@
+.masthead {
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+    margin-bottom: 3rem;
+
+    &__identity {
+        flex: 1 1 auto;
+    }
+
+    &__avatar {
+        flex: 0 0 auto;
+        width: 19rem;
+        height: 19rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}

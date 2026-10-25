@@ -1,20 +1,17 @@
-<div class="sideSection">
-    <div class="sideSection__heading">
-        <h2 class="sideSection__title">Skills</h2>
-    </div>
-    <div class="sideSection__content">
+<section id="skills" class="section">
+    <h2 class="section__title">Skills</h2>
+    <div class="section__content">
         <ul class="skills">
-            <li>
-                {{ range .skills }}
-                <ul class="skills__group">
-                    <span>{{ .name | safeHTML }}</span>
-                    <br>
+            {{ range .skills }}
+            <li class="skills__group">
+                <span class="skills__name">{{ .name | safeHTML }}</span>
+                <ul class="skills__keywords">
                     {{ range .keywords }}
                     <li>{{ . | safeHTML }}</li>
                     {{ end }}
                 </ul>
-                {{ end }}
             </li>
+            {{ end }}
         </ul>
     </div>
-</div>
+</section>

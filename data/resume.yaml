@@ -46,7 +46,7 @@ work:
     startDate: 2023-03-01
     endDate: 2023-09-01
     highlights:
-      - "Promoted to Team Lead June 2023, managing and mentoring a team of 6 engineers"
+      - "Promoted to Team Lead 2023, managing and mentoring a team of 6 engineers"
       - "Architected an observability platform with the team, using OpenTelemetry Collectors/Gateways, auto-instrumentation, Prometheus, Grafana, OpenSearch, and AWS services"
       - "Automated a weekly extract of org chart data using Python, AWS Lambda, SNS, S3, and Active Directory"
     badges: ["AWS", "Observability", "Serverless"]
@@ -78,7 +78,7 @@ work:
     position: Release and DevOps Engineer
     startDate: 2017-12-01
     endDate: 2018-10-01
-    badges: ["CI/CD"]
+    badges: ["CI/CD", "Powershell"]
     highlights:
       - "Developed and monitored automation in TFS and Jenkins to compile and package software for release"
       - "Analyzed and automated development processes with focus on decreasing development cycle duration and increasing release quality. Recommended process changes when automation was not appropriate"
@@ -89,7 +89,7 @@ work:
     endDate: 2017-12-01
     badges: ["Operations", "File Integration"]
     highlights:
-      - "Promoted to Senior October 2016"
+      - "Promoted to Senior 2016"
       - "Managed application, web, and database servers dedicated to hosting Linedata's “Front Office” product suite. Implemented client installations, configured system monitoring, and automated system maintenance"
       - "Designed, built, and deployed file integrations to enable data flow between Linedata's core products and third party software systems. Frequently used SSIS, SQL, Powershell, Batch"
       - "Notably designed, built, and implemented Portal 2, a distributed software suite made to centrally manage servers, execute load balanced jobs, and deliver controlled access to Linedata's support organization. Includes two distinct Django web sites and one C#.NET Windows service, deployed to over 30 servers"
@@ -98,7 +98,7 @@ work:
     startDate: 2012-05-01
     endDate: 2014-03-01
     highlights:
-      - "Promoted to Senior February, 2013"
+      - "Promoted to Senior 2013"
       - "Served as the third and final tier of technical and product support working directly with clients"
       - "Operated Linedata's SAAS: operational monitoring, technical client implementations, and server maintenance"
       - "Tested product workflows, bugs, and performance issues to accommodate client needs"

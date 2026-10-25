@@ -1,21 +1,28 @@
 .education {
+    list-style: none;
+
     &__item {
-        margin-bottom: 0.8rem;
+        margin-bottom: 1rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__header,
+    &__detail {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
     }
 
     &__place {
         font-weight: 700;
     }
 
-    &__degree {
-        margin-left: 1em;
-    }
-
-    &__date {
-        float: right;
-    }
-
+    &__date,
     &__honors {
-        margin-left: 1em;
+        flex: 0 0 auto;
+        color: $color-secondary;
     }
 }

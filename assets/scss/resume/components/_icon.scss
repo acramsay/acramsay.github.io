@@ -1,0 +1,8 @@
+// Inline SVG icons (contact links, company locations). SVGs are vector shapes,
+// so unlike an icon font they add nothing to the extracted text layer.
+.icon {
+    flex: 0 0 auto;
+    width: 1.6rem;
+    height: 1.6rem;
+    color: $color-primary;
+}

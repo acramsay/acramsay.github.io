@@ -1,26 +1,6 @@
+// The paper effect: a soft drop shadow so the sheet reads as a page on screen.
 @mixin shadow($distance) {
-    -webkit-box-shadow: $distance * 1rem $distance * 2rem $distance * 3rem rgba($color-dark, $distance * 0.3);
-    -moz-box-shadow: $distance * 1rem $distance * 2rem $distance * 3rem rgba($color-dark, $distance * 0.3);
     box-shadow: $distance * 1rem $distance * 2rem $distance * 3rem rgba($color-dark, $distance * 0.3);
-}
-
-@mixin hz-center {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-@mixin vt-center {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-@mixin all-center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
 }
 
 @mixin avoid-break {
@@ -29,33 +9,13 @@
     }
 }
 
-// Disable color changes from hugo-coder
-@mixin resume_dark {
-    .content {
-
-        .section__title,
-        .experience__company,
-        .experience__position,
-        .sideSection__title {
-            color: $color-dark;
-        }
-
-        .mainHeading,
-        .experience__place,
-        .experience__date {
-            color: $color-secondary;
-        }
-
-        color: $color-dark;
-    }
-}
-
-body.colorscheme-dark {
-    @include resume_dark();
-}
-
-body.colorscheme-auto {
-    @media (prefers-color-scheme: dark) {
-        @include resume_dark();
+// The rule after a section title is a border, never text, so ATS extraction
+// never sees it.
+@mixin title-rule($color) {
+    &::after {
+        content: '';
+        flex: 1 1 auto;
+        border-top: 1px solid $color;
+        margin-left: 1.5rem;
     }
 }

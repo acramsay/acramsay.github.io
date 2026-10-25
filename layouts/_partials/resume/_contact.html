@@ -1,0 +1,14 @@
+<ul class="contact">
+    {{ with .basics.email }}
+    <li class="contact__item">{{ partial "resume/_icon.html" "email" }}<a class="contact__link" href="mailto:{{ . }}">{{ . }}</a></li>
+    {{ end }}
+    {{ with .basics.location }}
+    <li class="contact__item">{{ partial "resume/_icon.html" "location" }}<span>{{ .city }}, {{ .countryCode }}</span></li>
+    {{ end }}
+    {{ with .basics.website }}
+    <li class="contact__item">{{ partial "resume/_icon.html" "website" }}<a class="contact__link" href="{{ . }}">{{ . }}</a></li>
+    {{ end }}
+    {{ range .basics.profiles }}
+    <li class="contact__item">{{ partial "resume/_icon.html" (.network | lower) }}<a class="contact__link" href="{{ .url }}">{{ .url }}</a></li>
+    {{ end }}
+</ul>

@@ -1,19 +1,19 @@
-<div id="education" class="sideSection">
-    <div class="sideSection__heading">
-        <h2 class="sideSection__title">Education</h2>
-    </div>
-    <div class="sideSection__content">
-        <ul>
+<section id="education" class="section">
+    <h2 class="section__title">Education</h2>
+    <div class="section__content">
+        <ul class="education">
             {{ range .education }}
             <li class="education__item">
-                <div class="education__place">{{ .institution | safeHTML }}</div>
-                <div>
-                    <span class="education__degree">{{ .studyType }} {{ .area | safeHTML }}</span>
-                    <span class="education__date">{{ time.Format "January 2006" .endDate }}</span>
+                <div class="education__header">
+                    <span class="education__place">{{ .institution | safeHTML }}</span>
+                    <span class="education__date">{{ time.Format "Jan 2006" .endDate }}</span>
                 </div>
-                {{ if .score }}<div class="education__honors">{{ .score | safeHTML }}</div>{{ end }}
+                <div class="education__detail">
+                    <span class="education__degree">{{ .studyType }} {{ .area | safeHTML }}</span>
+                    {{ if .score }}<span class="education__honors">{{ .score | safeHTML }}</span>{{ end }}
+                </div>
             </li>
             {{ end }}
         </ul>
     </div>
-</div>
+</section>
