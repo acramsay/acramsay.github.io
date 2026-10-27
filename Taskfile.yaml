@@ -65,6 +65,22 @@ tasks:
     cmds:
       - chromium --headless --no-pdf-header-footer --generate-pdf-document-outline --print-to-pdf='{{ .PDF }}' '{{ .URL }}'
 
+  resume:pdf:onetime:
+    desc: Render a job-specific resume PDF into pdfs/<slug>/, where slug is name-jobtitle
+    vars:
+      URL: http://localhost:1313/resume/
+      SLUG:
+        sh: printf '%s' '{{ .NAME }}' | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g; s/^-+//; s/-+$//'
+      OUTDIR: '{{ joinPath "pdfs" .SLUG }}'
+    requires:
+      vars: [NAME]
+    preconditions:
+      - sh: curl --silent --fail --output /dev/null '{{ .URL }}'
+        msg: 'local server is not running'
+    cmds:
+      - mkdir -p '{{ .OUTDIR }}'
+      - chromium --headless --no-pdf-header-footer --generate-pdf-document-outline --print-to-pdf='{{ joinPath .OUTDIR "Resume - Alex Ramsay.pdf" }}' '{{ .URL }}'
+
   start:
     desc: Start the Hugo dev server in the background
     if: "! pgrep -f '{{ .HUGO }} server'"

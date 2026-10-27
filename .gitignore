@@ -27,3 +27,6 @@ go.work
 .hugo_build.lock
 public
 resources
+
+# Job-specific resume PDFs
+pdfs
