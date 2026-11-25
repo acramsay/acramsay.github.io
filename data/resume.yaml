@@ -27,6 +27,18 @@ education:
     studyType: B.S.
 
 work:
+  - name: UKG
+    location: Lowell, MA (Hybrid)
+    position: Staff Platform Engineer
+    startDate: 2026-12-01
+    badges: ["Databases", "GitOps", "Kubernetes", "OpenStack", "Platform Engineering", "Terraform"]
+    highlights:
+      - "Design, build, and operate infrastructure platforms that deliver critical database services (MongoDB, PostgreSQL, Redis, RabbitMQ, MySQL) at scale across on-premises, private cloud, and public cloud environments"
+      - "Develop and maintain Infrastructure as Code with Terraform and Terragrunt for provisioning, configuration, upgrades, migrations, and lifecycle management"
+      - "Build and manage Kubernetes deployments, Helm charts, and operators, and improve CI/CD and GitOps workflows using GitHub Actions"
+      - "Automate certificate management, secrets handling, backups, and service upgrades, and improve observability, alerting, and tracing with Prometheus and Grafana"
+      - "Respond to and resolve P1/P2 production incidents and participate in on-call rotation for mission-critical database and messaging services"
+      - "Provide technical leadership across the platform team, establishing engineering standards through design and code review while mentoring engineers on DevOps, Kubernetes, and Linux"
   - name: Liatrio
     location: Remote
     position: Lead DevOps Engineer
