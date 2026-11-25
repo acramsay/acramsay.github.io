@@ -137,13 +137,13 @@ skills:
       - Istio
       - Jaeger
       - Kibana
-      - K8s (EKS)
-      - K8s Operators
+      - Kubernetes (EKS)
+      - Kubernetes Operators
       - LiteLLM
       - OpenTelemetry
       - Postgres
       - Prometheus
-      - RHEL
+      - Linux (RHEL)
   - name: Languages/Frameworks
     keywords:
       - Bash

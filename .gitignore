@@ -30,3 +30,6 @@ resources
 
 # Job-specific resume PDFs
 pdfs
+
+# Experience bank (local symlink to the encrypted Obsidian vault copy)
+docs/job-search/experience-bank.md
